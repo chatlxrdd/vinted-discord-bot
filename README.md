@@ -14,7 +14,7 @@ Before running the bot, you need to have Node.js installed, and you should downl
 
 1. After downloading the repository, open a terminal and navigate to the bot's folder.
 
-2. Run the following command to install the required dependencies, including Puppeteer:
+2. Run the following command to install the required dependencies
 
    ```bash
    npm i
@@ -25,10 +25,12 @@ To use the bot, follow these steps:
 1. Start the bot by running the following command in the bot's folder:
 
    ```bash
-   node main.js
+   node .
 
 The bot will start running and monitor the categories specified in the `main.js` file. You can configure the categories by editing the `catalogIds` field in the script, as explained in the comments.
 
+Configure your discord channel & token, and refresh rate at
+`/modules/config.js`
 The bot will fetch the latest item added to each category and send the information to your console.
 
 ## Contributing
