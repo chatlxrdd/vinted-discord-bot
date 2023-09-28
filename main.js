@@ -124,6 +124,7 @@ function logOffers(cachedOffers, fetchedOffers) {
 }
 
 function getNewOffers(cachedOffers, fetchedOffers) {
+    if (!cachedOffers || !fetchedOffers) return [];
     const cachedUrls = cachedOffers.map(offer => offer.url);
     const newOffers = fetchedOffers.filter(offer => !cachedUrls.includes(offer.url));
     return newOffers;
