@@ -1,0 +1,1618 @@
+[
+  {
+    "id": 3535874535,
+    "title": "Legginsy M Nike ",
+    "price": "25.0",
+    "is_visible": 1,
+    "discount": null,
+    "currency": "PLN",
+    "brand_title": "Nike",
+    "is_for_swap": false,
+    "user": {
+      "id": 141938444,
+      "login": "ama.krzy",
+      "business": false,
+      "profile_url": "https://www.vinted.pl/member/141938444-amakrzy",
+      "photo": {
+        "id": 152961803,
+        "width": 450,
+        "height": 800,
+        "temp_uuid": null,
+        "url": "https://images1.vinted.net/t/03_00413_84vhtHzYb5jtK3L2HzbeSQ7X/f800/1692289186.jpeg?s=72ea2e05cb52d3c27ed4f670169614d3e1d3c7d0",
+        "dominant_color": "#31abc2",
+        "dominant_color_opaque": "#C1E6ED",
+        "thumbnails": [
+          {
+            "type": "thumb310",
+            "url": "https://images1.vinted.net/t/03_00413_84vhtHzYb5jtK3L2HzbeSQ7X/310x310/1692289186.jpeg?s=3176c2b7c252c37b09e7f57045ca1a658ed8f231",
+            "width": 310,
+            "height": 310,
+            "original_size": null
+          },
+          {
+            "type": "thumb150",
+            "url": "https://images1.vinted.net/t/03_00413_84vhtHzYb5jtK3L2HzbeSQ7X/150x150/1692289186.jpeg?s=8631b8c9b07f4ebc5b491d7ac49ae5d0a10c87a4",
+            "width": 150,
+            "height": 150,
+            "original_size": null
+          },
+          {
+            "type": "thumb100",
+            "url": "https://images1.vinted.net/t/03_00413_84vhtHzYb5jtK3L2HzbeSQ7X/100x100/1692289186.jpeg?s=1bae8556fcb8f71e41b6cc83f75b91147fe43fac",
+            "width": 100,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb50",
+            "url": "https://images1.vinted.net/t/03_00413_84vhtHzYb5jtK3L2HzbeSQ7X/50x50/1692289186.jpeg?s=8dbbaaee3a713ba834421a486ec930b51c34040a",
+            "width": 50,
+            "height": 50,
+            "original_size": null
+          },
+          {
+            "type": "thumb20",
+            "url": "https://images1.vinted.net/t/03_00413_84vhtHzYb5jtK3L2HzbeSQ7X/20x20/1692289186.jpeg?s=4a9cb6b8bea2423e568f8fc6f3ea605efcb8905f",
+            "width": 20,
+            "height": 20,
+            "original_size": null
+          }
+        ],
+        "is_suspicious": false,
+        "orientation": null,
+        "high_resolution": {
+          "id": "03_00413_84vhtHzYb5jtK3L2HzbeSQ7X",
+          "timestamp": 1692289186,
+          "orientation": null
+        },
+        "full_size_url": "https://images1.vinted.net/tc/03_00413_84vhtHzYb5jtK3L2HzbeSQ7X/1692289186.jpeg?s=f398d906e19a5ac37f85ac9bfc6035fb37a861b9",
+        "is_hidden": false,
+        "extra": {}
+      }
+    },
+    "url": "https://www.vinted.pl/items/3535874535-legginsy-m-nike",
+    "promoted": false,
+    "photo": {
+      "id": 14347398599,
+      "image_no": 1,
+      "width": 800,
+      "height": 600,
+      "dominant_color": "#808482",
+      "dominant_color_opaque": "#D9DADA",
+      "url": "https://images1.vinted.net/t/03_021c5_3Y1TVGiwGayXxecpaAmpcKGb/f800/1695916170.jpeg?s=6ab8090f08bb3ee4a364155527b024ade95f1766",
+      "is_main": true,
+      "thumbnails": [
+        {
+          "type": "thumb70x100",
+          "url": "https://images1.vinted.net/t/03_021c5_3Y1TVGiwGayXxecpaAmpcKGb/70x100/1695916170.jpeg?s=8defb8056dda489d3254322c9eb3e537e2afdef9",
+          "width": 70,
+          "height": 100,
+          "original_size": null
+        },
+        {
+          "type": "thumb150x210",
+          "url": "https://images1.vinted.net/t/03_021c5_3Y1TVGiwGayXxecpaAmpcKGb/150x210/1695916170.jpeg?s=30ef4f9d47b73e441fe83e0a79abfa1a0dd8e8ef",
+          "width": 150,
+          "height": 210,
+          "original_size": null
+        },
+        {
+          "type": "thumb310x430",
+          "url": "https://images1.vinted.net/t/03_021c5_3Y1TVGiwGayXxecpaAmpcKGb/310x430/1695916170.jpeg?s=224ce186e8b7bfc664faef050446f08e51cdebc0",
+          "width": 310,
+          "height": 430,
+          "original_size": null
+        },
+        {
+          "type": "thumb428x624",
+          "url": "https://images1.vinted.net/t/03_021c5_3Y1TVGiwGayXxecpaAmpcKGb/f800/1695916170.jpeg?s=6ab8090f08bb3ee4a364155527b024ade95f1766",
+          "width": 428,
+          "height": 321,
+          "original_size": true
+        },
+        {
+          "type": "thumb624x428",
+          "url": "https://images1.vinted.net/t/03_021c5_3Y1TVGiwGayXxecpaAmpcKGb/f800/1695916170.jpeg?s=6ab8090f08bb3ee4a364155527b024ade95f1766",
+          "width": 624,
+          "height": 468,
+          "original_size": true
+        },
+        {
+          "type": "thumb364x428",
+          "url": "https://images1.vinted.net/t/03_021c5_3Y1TVGiwGayXxecpaAmpcKGb/f800/1695916170.jpeg?s=6ab8090f08bb3ee4a364155527b024ade95f1766",
+          "width": 364,
+          "height": 273,
+          "original_size": true
+        }
+      ],
+      "high_resolution": {
+        "id": "03_021c5_3Y1TVGiwGayXxecpaAmpcKGb",
+        "timestamp": 1695916170,
+        "orientation": null
+      },
+      "is_suspicious": false,
+      "full_size_url": "https://images1.vinted.net/tc/03_021c5_3Y1TVGiwGayXxecpaAmpcKGb/1695916170.jpeg?s=4187e2d29b1c57ba19258d9db5df309cf8db7594",
+      "is_hidden": false,
+      "extra": {}
+    },
+    "favourite_count": 0,
+    "is_favourite": false,
+    "badge": null,
+    "conversion": null,
+    "service_fee": "4.15",
+    "total_item_price": "29.15",
+    "view_count": 0,
+    "size_title": "M / 38 / 10",
+    "content_source": "catalog",
+    "search_tracking_params": {
+      "score": 0,
+      "matched_queries": null
+    }
+  },
+  {
+    "id": 3535558725,
+    "title": "Běžecké legíny 7/8 se zvýšeným pasem",
+    "price": "87.76",
+    "is_visible": 1,
+    "discount": null,
+    "currency": "PLN",
+    "brand_title": "Nike",
+    "is_for_swap": false,
+    "user": {
+      "id": 117239510,
+      "login": "tss12",
+      "business": false,
+      "profile_url": "https://www.vinted.pl/member/117239510-tss12",
+      "photo": {
+        "id": 114995828,
+        "width": 800,
+        "height": 533,
+        "temp_uuid": null,
+        "url": "https://images1.vinted.net/t/01_01046_eVtND7vYj2SCrYyMKsTmT1PB/f800/1667751944.jpeg?s=7ce46f87baa8a2a83d147ea1109c0551b08e12b2",
+        "dominant_color": "#31abc2",
+        "dominant_color_opaque": "#C1E6ED",
+        "thumbnails": [
+          {
+            "type": "thumb310",
+            "url": "https://images1.vinted.net/t/01_01046_eVtND7vYj2SCrYyMKsTmT1PB/310x310/1667751944.jpeg?s=4a208796fe116fa192a6d0245718567a394f1fc2",
+            "width": 310,
+            "height": 310,
+            "original_size": null
+          },
+          {
+            "type": "thumb150",
+            "url": "https://images1.vinted.net/t/01_01046_eVtND7vYj2SCrYyMKsTmT1PB/150x150/1667751944.jpeg?s=20cf61d4307cd89020b0e5c11ea2d89654faf6dc",
+            "width": 150,
+            "height": 150,
+            "original_size": null
+          },
+          {
+            "type": "thumb100",
+            "url": "https://images1.vinted.net/t/01_01046_eVtND7vYj2SCrYyMKsTmT1PB/100x100/1667751944.jpeg?s=e8601c23643fb574b15b8636dfb67bd7ff6397d2",
+            "width": 100,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb50",
+            "url": "https://images1.vinted.net/t/01_01046_eVtND7vYj2SCrYyMKsTmT1PB/50x50/1667751944.jpeg?s=dfd0da377d9a3457c87421287d040012e979277c",
+            "width": 50,
+            "height": 50,
+            "original_size": null
+          },
+          {
+            "type": "thumb20",
+            "url": "https://images1.vinted.net/t/01_01046_eVtND7vYj2SCrYyMKsTmT1PB/20x20/1667751944.jpeg?s=bd381d56d4171698902d46949adbb0b2ee9b47f4",
+            "width": 20,
+            "height": 20,
+            "original_size": null
+          }
+        ],
+        "is_suspicious": false,
+        "orientation": null,
+        "high_resolution": {
+          "id": "01_01046_eVtND7vYj2SCrYyMKsTmT1PB",
+          "timestamp": 1667751944,
+          "orientation": null
+        },
+        "full_size_url": "https://images1.vinted.net/tc/01_01046_eVtND7vYj2SCrYyMKsTmT1PB/1667751944.jpeg?s=467c5cb136f5f161b43143015f18907e69be0e86",
+        "is_hidden": false,
+        "extra": {}
+      }
+    },
+    "url": "https://www.vinted.pl/items/3535558725-bezecke-leginy-78-se-zvysenym-pasem",
+    "promoted": false,
+    "photo": {
+      "id": 14345925055,
+      "image_no": 1,
+      "width": 440,
+      "height": 800,
+      "dominant_color": "#5D5B59",
+      "dominant_color_opaque": "#CECECD",
+      "url": "https://images1.vinted.net/t/03_01a8a_bqwG138kPtnXdFzjDS2hEkuW/f800/1695912239.jpeg?s=1f790371189339afebf90112bd2b3dfbae2f8144",
+      "is_main": true,
+      "thumbnails": [
+        {
+          "type": "thumb70x100",
+          "url": "https://images1.vinted.net/t/03_01a8a_bqwG138kPtnXdFzjDS2hEkuW/70x100/1695912239.jpeg?s=31b25f1489de1740a1a22ef8404cb4a57422f21e",
+          "width": 70,
+          "height": 100,
+          "original_size": null
+        },
+        {
+          "type": "thumb150x210",
+          "url": "https://images1.vinted.net/t/03_01a8a_bqwG138kPtnXdFzjDS2hEkuW/150x210/1695912239.jpeg?s=507076e4064aa0eed7326430225a8fc640b32dc5",
+          "width": 150,
+          "height": 210,
+          "original_size": null
+        },
+        {
+          "type": "thumb310x430",
+          "url": "https://images1.vinted.net/t/03_01a8a_bqwG138kPtnXdFzjDS2hEkuW/310x430/1695912239.jpeg?s=daeffea548e680fac71cbdebe2249f2d20773119",
+          "width": 310,
+          "height": 430,
+          "original_size": null
+        },
+        {
+          "type": "thumb428x624",
+          "url": "https://images1.vinted.net/t/03_01a8a_bqwG138kPtnXdFzjDS2hEkuW/f800/1695912239.jpeg?s=1f790371189339afebf90112bd2b3dfbae2f8144",
+          "width": 235,
+          "height": 428,
+          "original_size": true
+        },
+        {
+          "type": "thumb624x428",
+          "url": "https://images1.vinted.net/t/03_01a8a_bqwG138kPtnXdFzjDS2hEkuW/f800/1695912239.jpeg?s=1f790371189339afebf90112bd2b3dfbae2f8144",
+          "width": 343,
+          "height": 624,
+          "original_size": true
+        },
+        {
+          "type": "thumb364x428",
+          "url": "https://images1.vinted.net/t/03_01a8a_bqwG138kPtnXdFzjDS2hEkuW/f800/1695912239.jpeg?s=1f790371189339afebf90112bd2b3dfbae2f8144",
+          "width": 200,
+          "height": 364,
+          "original_size": true
+        }
+      ],
+      "high_resolution": {
+        "id": "03_01a8a_bqwG138kPtnXdFzjDS2hEkuW",
+        "timestamp": 1695912239,
+        "orientation": null
+      },
+      "is_suspicious": false,
+      "full_size_url": "https://images1.vinted.net/tc/03_01a8a_bqwG138kPtnXdFzjDS2hEkuW/1695912239.jpeg?s=5b5cce1a2ac8e9a6dc91e3c68393b232d1e45b08",
+      "is_hidden": false,
+      "extra": {}
+    },
+    "favourite_count": 0,
+    "is_favourite": false,
+    "badge": null,
+    "conversion": {
+      "seller_price": "450.0",
+      "seller_currency": "CZK",
+      "buyer_currency": "PLN",
+      "fx_rounded_rate": "0.2",
+      "fx_base_amount": "1.0",
+      "fx_markup_rate": "0.012"
+    },
+    "service_fee": "7.29",
+    "total_item_price": "95.05",
+    "view_count": 0,
+    "size_title": "M / 38 / 10",
+    "content_source": "catalog",
+    "search_tracking_params": {
+      "score": 0,
+      "matched_queries": null
+    }
+  },
+  {
+    "id": 3535497639,
+    "title": "Nike * Pro * legginsy * damskie * unikatowe * M",
+    "price": "89.9",
+    "is_visible": 1,
+    "discount": null,
+    "currency": "PLN",
+    "brand_title": "Nike",
+    "is_for_swap": false,
+    "user": {
+      "id": 140436757,
+      "login": "onay_onay",
+      "business": false,
+      "profile_url": "https://www.vinted.pl/member/140436757-onayonay",
+      "photo": {
+        "id": 139026907,
+        "width": 600,
+        "height": 800,
+        "temp_uuid": null,
+        "url": "https://images1.vinted.net/t/02_01b21_JwKzrV26AGeGTxp5jy4DAP9h/f800/1682584908.jpeg?s=10bb6f11c396cc05fd8ff86832c5cc5db94266e9",
+        "dominant_color": "#31abc2",
+        "dominant_color_opaque": "#C1E6ED",
+        "thumbnails": [
+          {
+            "type": "thumb310",
+            "url": "https://images1.vinted.net/t/02_01b21_JwKzrV26AGeGTxp5jy4DAP9h/310x310/1682584908.jpeg?s=1be20d27977b621dea3b0fd729030029e7dcb741",
+            "width": 310,
+            "height": 310,
+            "original_size": null
+          },
+          {
+            "type": "thumb150",
+            "url": "https://images1.vinted.net/t/02_01b21_JwKzrV26AGeGTxp5jy4DAP9h/150x150/1682584908.jpeg?s=3e1990ae210988b6804d1906b8bb4f37bd7909bf",
+            "width": 150,
+            "height": 150,
+            "original_size": null
+          },
+          {
+            "type": "thumb100",
+            "url": "https://images1.vinted.net/t/02_01b21_JwKzrV26AGeGTxp5jy4DAP9h/100x100/1682584908.jpeg?s=a27f4fb94afd1f133979a677f2f7ea56c397e5a3",
+            "width": 100,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb50",
+            "url": "https://images1.vinted.net/t/02_01b21_JwKzrV26AGeGTxp5jy4DAP9h/50x50/1682584908.jpeg?s=aeb71b3cec177f28a02f2476df7b214e6a3cc0b1",
+            "width": 50,
+            "height": 50,
+            "original_size": null
+          },
+          {
+            "type": "thumb20",
+            "url": "https://images1.vinted.net/t/02_01b21_JwKzrV26AGeGTxp5jy4DAP9h/20x20/1682584908.jpeg?s=8b573e1513da1758e7e38c0090c636fef4a8d626",
+            "width": 20,
+            "height": 20,
+            "original_size": null
+          }
+        ],
+        "is_suspicious": false,
+        "orientation": null,
+        "high_resolution": {
+          "id": "02_01b21_JwKzrV26AGeGTxp5jy4DAP9h",
+          "timestamp": 1682584908,
+          "orientation": null
+        },
+        "full_size_url": "https://images1.vinted.net/tc/02_01b21_JwKzrV26AGeGTxp5jy4DAP9h/1682584908.jpeg?s=dd40eed18fc31f92c13a170d5c980503bbf93ab8",
+        "is_hidden": false,
+        "extra": {}
+      }
+    },
+    "url": "https://www.vinted.pl/items/3535497639-nike-pro-legginsy-damskie-unikatowe-m",
+    "promoted": false,
+    "photo": {
+      "id": 14345623926,
+      "image_no": 1,
+      "width": 632,
+      "height": 800,
+      "dominant_color": "#68737C",
+      "dominant_color_opaque": "#D2D5D8",
+      "url": "https://images1.vinted.net/t/02_00dec_w6UixcpVn61iu6qrmdm45Fuq/f800/1695911453.jpeg?s=18cd8eae60f5273fa23395695955a72ed0934662",
+      "is_main": true,
+      "thumbnails": [
+        {
+          "type": "thumb70x100",
+          "url": "https://images1.vinted.net/t/02_00dec_w6UixcpVn61iu6qrmdm45Fuq/70x100/1695911453.jpeg?s=b61b2ef371f9fc02ff4d33b4d06505a5f6e579e1",
+          "width": 70,
+          "height": 100,
+          "original_size": null
+        },
+        {
+          "type": "thumb150x210",
+          "url": "https://images1.vinted.net/t/02_00dec_w6UixcpVn61iu6qrmdm45Fuq/150x210/1695911453.jpeg?s=43c7c433ee9b7df98cb75f7d98cddfab4d469e74",
+          "width": 150,
+          "height": 210,
+          "original_size": null
+        },
+        {
+          "type": "thumb310x430",
+          "url": "https://images1.vinted.net/t/02_00dec_w6UixcpVn61iu6qrmdm45Fuq/310x430/1695911453.jpeg?s=379e535bd0d38148da74d700465549e5e8766169",
+          "width": 310,
+          "height": 430,
+          "original_size": null
+        },
+        {
+          "type": "thumb428x624",
+          "url": "https://images1.vinted.net/t/02_00dec_w6UixcpVn61iu6qrmdm45Fuq/f800/1695911453.jpeg?s=18cd8eae60f5273fa23395695955a72ed0934662",
+          "width": 338,
+          "height": 428,
+          "original_size": true
+        },
+        {
+          "type": "thumb624x428",
+          "url": "https://images1.vinted.net/t/02_00dec_w6UixcpVn61iu6qrmdm45Fuq/f800/1695911453.jpeg?s=18cd8eae60f5273fa23395695955a72ed0934662",
+          "width": 493,
+          "height": 624,
+          "original_size": true
+        },
+        {
+          "type": "thumb364x428",
+          "url": "https://images1.vinted.net/t/02_00dec_w6UixcpVn61iu6qrmdm45Fuq/f800/1695911453.jpeg?s=18cd8eae60f5273fa23395695955a72ed0934662",
+          "width": 287,
+          "height": 364,
+          "original_size": true
+        }
+      ],
+      "high_resolution": {
+        "id": "02_00dec_w6UixcpVn61iu6qrmdm45Fuq",
+        "timestamp": 1695911453,
+        "orientation": 0
+      },
+      "is_suspicious": false,
+      "full_size_url": "https://images1.vinted.net/tc/02_00dec_w6UixcpVn61iu6qrmdm45Fuq/1695911453.jpeg?s=0b5f7fa02b849f4b719f612e599431b3e9316fd9",
+      "is_hidden": false,
+      "extra": {}
+    },
+    "favourite_count": 1,
+    "is_favourite": false,
+    "badge": null,
+    "conversion": null,
+    "service_fee": "7.4",
+    "total_item_price": "97.3",
+    "view_count": 0,
+    "size_title": "M / 38 / 10",
+    "content_source": "catalog",
+    "search_tracking_params": {
+      "score": 0,
+      "matched_queries": null
+    }
+  },
+  {
+    "id": 3533659101,
+    "title": "Colanti Nike",
+    "price": "32.53",
+    "is_visible": 1,
+    "discount": null,
+    "currency": "PLN",
+    "brand_title": "Nike",
+    "is_for_swap": false,
+    "user": {
+      "id": 163562225,
+      "login": "karins-ems",
+      "business": false,
+      "profile_url": "https://www.vinted.pl/member/163562225-karins-ems",
+      "photo": {
+        "id": 159307443,
+        "width": 96,
+        "height": 96,
+        "temp_uuid": null,
+        "url": "https://images1.vinted.net/t/03_004b8_Ww6EgiGCFGPQz8HyWuj4qHBP/f800/1695838124.jpeg?s=caa76515b998736b61f2771a1ed8ef7bb9c6a6e9",
+        "dominant_color": "#31abc2",
+        "dominant_color_opaque": "#C1E6ED",
+        "thumbnails": [
+          {
+            "type": "thumb310",
+            "url": "https://images1.vinted.net/t/03_004b8_Ww6EgiGCFGPQz8HyWuj4qHBP/310x310/1695838124.jpeg?s=4dccc05d8b21272371d2a8657bd4ac203d603760",
+            "width": 310,
+            "height": 310,
+            "original_size": null
+          },
+          {
+            "type": "thumb150",
+            "url": "https://images1.vinted.net/t/03_004b8_Ww6EgiGCFGPQz8HyWuj4qHBP/150x150/1695838124.jpeg?s=ffdbdc65d2ee6bb8199190cc96d3ac66453c430a",
+            "width": 150,
+            "height": 150,
+            "original_size": null
+          },
+          {
+            "type": "thumb100",
+            "url": "https://images1.vinted.net/t/03_004b8_Ww6EgiGCFGPQz8HyWuj4qHBP/100x100/1695838124.jpeg?s=c58576520fb7301a084ac621427b631e345de017",
+            "width": 100,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb50",
+            "url": "https://images1.vinted.net/t/03_004b8_Ww6EgiGCFGPQz8HyWuj4qHBP/50x50/1695838124.jpeg?s=f7629e6f7295a24d8227abd80544c4dada54867b",
+            "width": 50,
+            "height": 50,
+            "original_size": null
+          },
+          {
+            "type": "thumb20",
+            "url": "https://images1.vinted.net/t/03_004b8_Ww6EgiGCFGPQz8HyWuj4qHBP/20x20/1695838124.jpeg?s=6902de90751e3243a8b435440ef120ed8fb8c974",
+            "width": 20,
+            "height": 20,
+            "original_size": null
+          }
+        ],
+        "is_suspicious": false,
+        "orientation": null,
+        "high_resolution": {
+          "id": "03_004b8_Ww6EgiGCFGPQz8HyWuj4qHBP",
+          "timestamp": 1695838124,
+          "orientation": null
+        },
+        "full_size_url": "https://images1.vinted.net/tc/03_004b8_Ww6EgiGCFGPQz8HyWuj4qHBP/1695838124.jpeg?s=d6dfa20d7f4f1ecb0733defed69b32fedd0646a5",
+        "is_hidden": false,
+        "extra": {}
+      }
+    },
+    "url": "https://www.vinted.pl/items/3533659101-colanti-nike",
+    "promoted": false,
+    "photo": {
+      "id": 14337550433,
+      "image_no": 1,
+      "width": 800,
+      "height": 600,
+      "dominant_color": "#757173",
+      "dominant_color_opaque": "#D6D4D5",
+      "url": "https://images1.vinted.net/t/02_018c0_FoHPKKkdEb1kaLgvugKEsahQ/f800/1695887892.jpeg?s=6191ec25aea92e0b642665b30fd67648483822ba",
+      "is_main": true,
+      "thumbnails": [
+        {
+          "type": "thumb70x100",
+          "url": "https://images1.vinted.net/t/02_018c0_FoHPKKkdEb1kaLgvugKEsahQ/70x100/1695887892.jpeg?s=2e7ae17e49b45f99c923d43440222251c94af910",
+          "width": 70,
+          "height": 100,
+          "original_size": null
+        },
+        {
+          "type": "thumb150x210",
+          "url": "https://images1.vinted.net/t/02_018c0_FoHPKKkdEb1kaLgvugKEsahQ/150x210/1695887892.jpeg?s=4bee7e463e17ac3979d368e342c810ecb507b437",
+          "width": 150,
+          "height": 210,
+          "original_size": null
+        },
+        {
+          "type": "thumb310x430",
+          "url": "https://images1.vinted.net/t/02_018c0_FoHPKKkdEb1kaLgvugKEsahQ/310x430/1695887892.jpeg?s=38469c5c6d2ec67379e198cc446b093d5d58013e",
+          "width": 310,
+          "height": 430,
+          "original_size": null
+        },
+        {
+          "type": "thumb428x624",
+          "url": "https://images1.vinted.net/t/02_018c0_FoHPKKkdEb1kaLgvugKEsahQ/f800/1695887892.jpeg?s=6191ec25aea92e0b642665b30fd67648483822ba",
+          "width": 428,
+          "height": 321,
+          "original_size": true
+        },
+        {
+          "type": "thumb624x428",
+          "url": "https://images1.vinted.net/t/02_018c0_FoHPKKkdEb1kaLgvugKEsahQ/f800/1695887892.jpeg?s=6191ec25aea92e0b642665b30fd67648483822ba",
+          "width": 624,
+          "height": 468,
+          "original_size": true
+        },
+        {
+          "type": "thumb364x428",
+          "url": "https://images1.vinted.net/t/02_018c0_FoHPKKkdEb1kaLgvugKEsahQ/f800/1695887892.jpeg?s=6191ec25aea92e0b642665b30fd67648483822ba",
+          "width": 364,
+          "height": 273,
+          "original_size": true
+        }
+      ],
+      "high_resolution": {
+        "id": "02_018c0_FoHPKKkdEb1kaLgvugKEsahQ",
+        "timestamp": 1695887892,
+        "orientation": null
+      },
+      "is_suspicious": false,
+      "full_size_url": "https://images1.vinted.net/tc/02_018c0_FoHPKKkdEb1kaLgvugKEsahQ/1695887892.jpeg?s=faeb490268bab1fa3f9b7e57101a0c3a41bd2c04",
+      "is_hidden": false,
+      "extra": {}
+    },
+    "favourite_count": 0,
+    "is_favourite": false,
+    "badge": null,
+    "conversion": {
+      "seller_price": "34.0",
+      "seller_currency": "RON",
+      "buyer_currency": "PLN",
+      "fx_rounded_rate": "0.96",
+      "fx_base_amount": "1.0",
+      "fx_markup_rate": "0.012"
+    },
+    "service_fee": "4.53",
+    "total_item_price": "37.06",
+    "view_count": 0,
+    "size_title": "M / 38 / 10",
+    "content_source": "catalog",
+    "search_tracking_params": {
+      "score": 0,
+      "matched_queries": null
+    }
+  },
+  {
+    "id": 3535246843,
+    "title": "Szara kurtka tnf",
+    "price": "99.99",
+    "is_visible": 1,
+    "discount": null,
+    "currency": "PLN",
+    "brand_title": "The North Face",
+    "is_for_swap": false,
+    "user": {
+      "id": 145707926,
+      "login": "morteeex1",
+      "business": false,
+      "profile_url": "https://www.vinted.pl/member/145707926-morteeex1",
+      "photo": {
+        "id": 155182551,
+        "width": 600,
+        "height": 800,
+        "temp_uuid": null,
+        "url": "https://images1.vinted.net/t/02_00019_LDJYMMpM4Xs9P3JrTxLQxnFa/f800/1693584279.jpeg?s=b8c33e90d4186c42fc8f53a8057b13b267db3d23",
+        "dominant_color": "#31abc2",
+        "dominant_color_opaque": "#C1E6ED",
+        "thumbnails": [
+          {
+            "type": "thumb310",
+            "url": "https://images1.vinted.net/t/02_00019_LDJYMMpM4Xs9P3JrTxLQxnFa/310x310/1693584279.jpeg?s=9c9a71ff4f624019229ef129a0898d83ce820df1",
+            "width": 310,
+            "height": 310,
+            "original_size": null
+          },
+          {
+            "type": "thumb150",
+            "url": "https://images1.vinted.net/t/02_00019_LDJYMMpM4Xs9P3JrTxLQxnFa/150x150/1693584279.jpeg?s=18ad7b9001aa4c95832ed9f5c65001dac27e2d3d",
+            "width": 150,
+            "height": 150,
+            "original_size": null
+          },
+          {
+            "type": "thumb100",
+            "url": "https://images1.vinted.net/t/02_00019_LDJYMMpM4Xs9P3JrTxLQxnFa/100x100/1693584279.jpeg?s=7175e3d71a0fa20ae4fdd5ff9b3df6dfc9228978",
+            "width": 100,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb50",
+            "url": "https://images1.vinted.net/t/02_00019_LDJYMMpM4Xs9P3JrTxLQxnFa/50x50/1693584279.jpeg?s=18a1025206a50af3cdfba0e8d8b5d75c465da05e",
+            "width": 50,
+            "height": 50,
+            "original_size": null
+          },
+          {
+            "type": "thumb20",
+            "url": "https://images1.vinted.net/t/02_00019_LDJYMMpM4Xs9P3JrTxLQxnFa/20x20/1693584279.jpeg?s=76b2b94b57b2e22a3522c00b7b5f81b63be45038",
+            "width": 20,
+            "height": 20,
+            "original_size": null
+          }
+        ],
+        "is_suspicious": false,
+        "orientation": null,
+        "high_resolution": {
+          "id": "02_00019_LDJYMMpM4Xs9P3JrTxLQxnFa",
+          "timestamp": 1693584279,
+          "orientation": null
+        },
+        "full_size_url": "https://images1.vinted.net/tc/02_00019_LDJYMMpM4Xs9P3JrTxLQxnFa/1693584279.jpeg?s=2987580914b1f729124cd530c53a6c8d1010b6cf",
+        "is_hidden": false,
+        "extra": {}
+      }
+    },
+    "url": "https://www.vinted.pl/items/3535246843-szara-kurtka-tnf",
+    "promoted": false,
+    "photo": {
+      "id": 14344623719,
+      "image_no": 1,
+      "width": 756,
+      "height": 800,
+      "dominant_color": "#808CA2",
+      "dominant_color_opaque": "#D9DDE3",
+      "url": "https://images1.vinted.net/t/02_00716_WiqTEJsqTnPZL5hbmodhGW1j/f800/1695908454.jpeg?s=4879c81c63e8ba31402136443d2c9d65f2ce47a5",
+      "is_main": true,
+      "thumbnails": [
+        {
+          "type": "thumb70x100",
+          "url": "https://images1.vinted.net/t/02_00716_WiqTEJsqTnPZL5hbmodhGW1j/70x100/1695908454.jpeg?s=46d8ff4bcbad78586bad7579b3687d8c443c7332",
+          "width": 70,
+          "height": 100,
+          "original_size": null
+        },
+        {
+          "type": "thumb150x210",
+          "url": "https://images1.vinted.net/t/02_00716_WiqTEJsqTnPZL5hbmodhGW1j/150x210/1695908454.jpeg?s=c822d9bcf4727e08affae6e3b8e5d05bc756287c",
+          "width": 150,
+          "height": 210,
+          "original_size": null
+        },
+        {
+          "type": "thumb310x430",
+          "url": "https://images1.vinted.net/t/02_00716_WiqTEJsqTnPZL5hbmodhGW1j/310x430/1695908454.jpeg?s=77e2c2b1c860d69fbe29151608ce5ccc669b87b5",
+          "width": 310,
+          "height": 430,
+          "original_size": null
+        },
+        {
+          "type": "thumb428x624",
+          "url": "https://images1.vinted.net/t/02_00716_WiqTEJsqTnPZL5hbmodhGW1j/f800/1695908454.jpeg?s=4879c81c63e8ba31402136443d2c9d65f2ce47a5",
+          "width": 404,
+          "height": 428,
+          "original_size": true
+        },
+        {
+          "type": "thumb624x428",
+          "url": "https://images1.vinted.net/t/02_00716_WiqTEJsqTnPZL5hbmodhGW1j/f800/1695908454.jpeg?s=4879c81c63e8ba31402136443d2c9d65f2ce47a5",
+          "width": 590,
+          "height": 624,
+          "original_size": true
+        },
+        {
+          "type": "thumb364x428",
+          "url": "https://images1.vinted.net/t/02_00716_WiqTEJsqTnPZL5hbmodhGW1j/f800/1695908454.jpeg?s=4879c81c63e8ba31402136443d2c9d65f2ce47a5",
+          "width": 344,
+          "height": 364,
+          "original_size": true
+        }
+      ],
+      "high_resolution": {
+        "id": "02_00716_WiqTEJsqTnPZL5hbmodhGW1j",
+        "timestamp": 1695908454,
+        "orientation": null
+      },
+      "is_suspicious": false,
+      "full_size_url": "https://images1.vinted.net/tc/02_00716_WiqTEJsqTnPZL5hbmodhGW1j/1695908454.jpeg?s=0689a46890c7406cb3a424703f943c100e3c2d4a",
+      "is_hidden": false,
+      "extra": {}
+    },
+    "favourite_count": 0,
+    "is_favourite": false,
+    "badge": null,
+    "conversion": null,
+    "service_fee": "7.9",
+    "total_item_price": "107.89",
+    "view_count": 0,
+    "size_title": "M",
+    "content_source": "catalog",
+    "search_tracking_params": {
+      "score": 0,
+      "matched_queries": null
+    }
+  },
+  {
+    "id": 3536088318,
+    "title": "kurtka the north face wiatrówka",
+    "price": "100.0",
+    "is_visible": 1,
+    "discount": null,
+    "currency": "PLN",
+    "brand_title": "The North Face",
+    "is_for_swap": false,
+    "user": {
+      "id": 91038310,
+      "login": "sokpomidorowy",
+      "business": false,
+      "profile_url": "https://www.vinted.pl/member/91038310-sokpomidorowy",
+      "photo": {
+        "id": 90549807,
+        "width": 500,
+        "height": 500,
+        "temp_uuid": null,
+        "url": "https://images1.vinted.net/t/02_013fe_uUAg9zLDGYZKPpZ61UVH3ghU/f800/1652788219.jpeg?s=71934598de2a9c6e4596945ba63f58b5d5c2ada2",
+        "dominant_color": "#31abc2",
+        "dominant_color_opaque": "#C1E6ED",
+        "thumbnails": [
+          {
+            "type": "thumb310",
+            "url": "https://images1.vinted.net/t/02_013fe_uUAg9zLDGYZKPpZ61UVH3ghU/310x310/1652788219.jpeg?s=183f3421ed6aa21fbf79aac560fa2c7659cb6441",
+            "width": 310,
+            "height": 310,
+            "original_size": null
+          },
+          {
+            "type": "thumb150",
+            "url": "https://images1.vinted.net/t/02_013fe_uUAg9zLDGYZKPpZ61UVH3ghU/150x150/1652788219.jpeg?s=b40665377f18f17af635a7811c92bb355d305fcb",
+            "width": 150,
+            "height": 150,
+            "original_size": null
+          },
+          {
+            "type": "thumb100",
+            "url": "https://images1.vinted.net/t/02_013fe_uUAg9zLDGYZKPpZ61UVH3ghU/100x100/1652788219.jpeg?s=e2c3ae039facc825c64542affbfe4266969f3186",
+            "width": 100,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb50",
+            "url": "https://images1.vinted.net/t/02_013fe_uUAg9zLDGYZKPpZ61UVH3ghU/50x50/1652788219.jpeg?s=d7eb565ebc1d8dd3c1f7ca4f80b43623e71bcbc3",
+            "width": 50,
+            "height": 50,
+            "original_size": null
+          },
+          {
+            "type": "thumb20",
+            "url": "https://images1.vinted.net/t/02_013fe_uUAg9zLDGYZKPpZ61UVH3ghU/20x20/1652788219.jpeg?s=34664fbf602d43320f24a4862f587e1a9d390134",
+            "width": 20,
+            "height": 20,
+            "original_size": null
+          }
+        ],
+        "is_suspicious": false,
+        "orientation": null,
+        "high_resolution": {
+          "id": "02_013fe_uUAg9zLDGYZKPpZ61UVH3ghU",
+          "timestamp": 1652788219,
+          "orientation": null
+        },
+        "full_size_url": "https://images1.vinted.net/tc/02_013fe_uUAg9zLDGYZKPpZ61UVH3ghU/1652788219.jpeg?s=de1ca5ed81b9ad6941d85fdbbb342562962cd4ae",
+        "is_hidden": false,
+        "extra": {}
+      }
+    },
+    "url": "https://www.vinted.pl/items/3536088318-kurtka-the-north-face-wiatrowka",
+    "promoted": false,
+    "photo": {
+      "id": 14348329689,
+      "image_no": 1,
+      "width": 600,
+      "height": 800,
+      "dominant_color": "#393D42",
+      "dominant_color_opaque": "#C4C5C6",
+      "url": "https://images1.vinted.net/t/01_008ef_KXufwpBERykfTgFdhUNDYJMu/f800/1695918850.jpeg?s=4c5517fa3bda4e04296f91a55e965ba96590d680",
+      "is_main": true,
+      "thumbnails": [
+        {
+          "type": "thumb70x100",
+          "url": "https://images1.vinted.net/t/01_008ef_KXufwpBERykfTgFdhUNDYJMu/70x100/1695918850.jpeg?s=2f8e8fb807f7b7a8dac21476cce2933ac85dda4b",
+          "width": 70,
+          "height": 100,
+          "original_size": null
+        },
+        {
+          "type": "thumb150x210",
+          "url": "https://images1.vinted.net/t/01_008ef_KXufwpBERykfTgFdhUNDYJMu/150x210/1695918850.jpeg?s=ab46bf68e0a8e4bf2f0bad88aea9174ffeaaadfb",
+          "width": 150,
+          "height": 210,
+          "original_size": null
+        },
+        {
+          "type": "thumb310x430",
+          "url": "https://images1.vinted.net/t/01_008ef_KXufwpBERykfTgFdhUNDYJMu/310x430/1695918850.jpeg?s=826be3b2ef915558c0c9b8069f623c81a7747941",
+          "width": 310,
+          "height": 430,
+          "original_size": null
+        },
+        {
+          "type": "thumb428x624",
+          "url": "https://images1.vinted.net/t/01_008ef_KXufwpBERykfTgFdhUNDYJMu/f800/1695918850.jpeg?s=4c5517fa3bda4e04296f91a55e965ba96590d680",
+          "width": 321,
+          "height": 428,
+          "original_size": true
+        },
+        {
+          "type": "thumb624x428",
+          "url": "https://images1.vinted.net/t/01_008ef_KXufwpBERykfTgFdhUNDYJMu/f800/1695918850.jpeg?s=4c5517fa3bda4e04296f91a55e965ba96590d680",
+          "width": 468,
+          "height": 624,
+          "original_size": true
+        },
+        {
+          "type": "thumb364x428",
+          "url": "https://images1.vinted.net/t/01_008ef_KXufwpBERykfTgFdhUNDYJMu/f800/1695918850.jpeg?s=4c5517fa3bda4e04296f91a55e965ba96590d680",
+          "width": 273,
+          "height": 364,
+          "original_size": true
+        }
+      ],
+      "high_resolution": {
+        "id": "01_008ef_KXufwpBERykfTgFdhUNDYJMu",
+        "timestamp": 1695918850,
+        "orientation": null
+      },
+      "is_suspicious": false,
+      "full_size_url": "https://images1.vinted.net/tc/01_008ef_KXufwpBERykfTgFdhUNDYJMu/1695918850.jpeg?s=994458a8d5c2f790cdb96d170f45b7be3a65f26d",
+      "is_hidden": false,
+      "extra": {}
+    },
+    "favourite_count": 23,
+    "is_favourite": false,
+    "badge": null,
+    "conversion": null,
+    "service_fee": "7.9",
+    "total_item_price": "107.9",
+    "view_count": 0,
+    "size_title": "L",
+    "content_source": "catalog",
+    "search_tracking_params": {
+      "score": 0,
+      "matched_queries": null
+    }
+  },
+  {
+    "id": 3534735330,
+    "title": "The north face kurtka",
+    "price": "99.0",
+    "is_visible": 1,
+    "discount": null,
+    "currency": "PLN",
+    "brand_title": "The North Face",
+    "is_for_swap": false,
+    "user": {
+      "id": 156706214,
+      "login": "dxd.shopp",
+      "business": false,
+      "profile_url": "https://www.vinted.pl/member/156706214-dxdshopp",
+      "photo": {
+        "id": 153294825,
+        "width": 450,
+        "height": 800,
+        "temp_uuid": null,
+        "url": "https://images1.vinted.net/t/01_0037a_GoWXu8LL8Z2PEF7wo3wFBFDK/f800/1692527909.jpeg?s=1114463604e857cb8082b90b67cc45d64b95b872",
+        "dominant_color": "#31abc2",
+        "dominant_color_opaque": "#C1E6ED",
+        "thumbnails": [
+          {
+            "type": "thumb310",
+            "url": "https://images1.vinted.net/t/01_0037a_GoWXu8LL8Z2PEF7wo3wFBFDK/310x310/1692527909.jpeg?s=1f22ddf79f768f6fcecc5832937b28f045b5c193",
+            "width": 310,
+            "height": 310,
+            "original_size": null
+          },
+          {
+            "type": "thumb150",
+            "url": "https://images1.vinted.net/t/01_0037a_GoWXu8LL8Z2PEF7wo3wFBFDK/150x150/1692527909.jpeg?s=2ccb8df7c046335788a1fc48f83a766c42458f68",
+            "width": 150,
+            "height": 150,
+            "original_size": null
+          },
+          {
+            "type": "thumb100",
+            "url": "https://images1.vinted.net/t/01_0037a_GoWXu8LL8Z2PEF7wo3wFBFDK/100x100/1692527909.jpeg?s=a2120e106b7c0d094a8af507293786f9d229066a",
+            "width": 100,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb50",
+            "url": "https://images1.vinted.net/t/01_0037a_GoWXu8LL8Z2PEF7wo3wFBFDK/50x50/1692527909.jpeg?s=26b43902a78d9d6aa8732f5922e9f1973cd1b09f",
+            "width": 50,
+            "height": 50,
+            "original_size": null
+          },
+          {
+            "type": "thumb20",
+            "url": "https://images1.vinted.net/t/01_0037a_GoWXu8LL8Z2PEF7wo3wFBFDK/20x20/1692527909.jpeg?s=78e734827b1686ca76821223eab7df7c190a3a79",
+            "width": 20,
+            "height": 20,
+            "original_size": null
+          }
+        ],
+        "is_suspicious": false,
+        "orientation": null,
+        "high_resolution": {
+          "id": "01_0037a_GoWXu8LL8Z2PEF7wo3wFBFDK",
+          "timestamp": 1692527909,
+          "orientation": null
+        },
+        "full_size_url": "https://images1.vinted.net/tc/01_0037a_GoWXu8LL8Z2PEF7wo3wFBFDK/1692527909.jpeg?s=e3066d2037ddbdd1fa98a2a24cbcc9c0d49bef7a",
+        "is_hidden": false,
+        "extra": {}
+      }
+    },
+    "url": "https://www.vinted.pl/items/3534735330-the-north-face-kurtka",
+    "promoted": false,
+    "photo": {
+      "id": 14342322034,
+      "image_no": 1,
+      "width": 600,
+      "height": 800,
+      "dominant_color": "#223353",
+      "dominant_color_opaque": "#BDC2CB",
+      "url": "https://images1.vinted.net/t/03_017ee_BcQH9aGSpPYB9VyqTmgbdkVT/f800/1695902280.jpeg?s=e181d60aa5e2462d50ba73383fdce3ccdbe2e48c",
+      "is_main": true,
+      "thumbnails": [
+        {
+          "type": "thumb70x100",
+          "url": "https://images1.vinted.net/t/03_017ee_BcQH9aGSpPYB9VyqTmgbdkVT/70x100/1695902280.jpeg?s=fe360c9bd6052107f7d7fa8c91a087b3a7161721",
+          "width": 70,
+          "height": 100,
+          "original_size": null
+        },
+        {
+          "type": "thumb150x210",
+          "url": "https://images1.vinted.net/t/03_017ee_BcQH9aGSpPYB9VyqTmgbdkVT/150x210/1695902280.jpeg?s=5f6723d4299e0d879819f77a130950a506c9b228",
+          "width": 150,
+          "height": 210,
+          "original_size": null
+        },
+        {
+          "type": "thumb310x430",
+          "url": "https://images1.vinted.net/t/03_017ee_BcQH9aGSpPYB9VyqTmgbdkVT/310x430/1695902280.jpeg?s=7d2aacfaa689d72afc6250322450ebd141bd6e5d",
+          "width": 310,
+          "height": 430,
+          "original_size": null
+        },
+        {
+          "type": "thumb428x624",
+          "url": "https://images1.vinted.net/t/03_017ee_BcQH9aGSpPYB9VyqTmgbdkVT/f800/1695902280.jpeg?s=e181d60aa5e2462d50ba73383fdce3ccdbe2e48c",
+          "width": 321,
+          "height": 428,
+          "original_size": true
+        },
+        {
+          "type": "thumb624x428",
+          "url": "https://images1.vinted.net/t/03_017ee_BcQH9aGSpPYB9VyqTmgbdkVT/f800/1695902280.jpeg?s=e181d60aa5e2462d50ba73383fdce3ccdbe2e48c",
+          "width": 468,
+          "height": 624,
+          "original_size": true
+        },
+        {
+          "type": "thumb364x428",
+          "url": "https://images1.vinted.net/t/03_017ee_BcQH9aGSpPYB9VyqTmgbdkVT/f800/1695902280.jpeg?s=e181d60aa5e2462d50ba73383fdce3ccdbe2e48c",
+          "width": 273,
+          "height": 364,
+          "original_size": true
+        }
+      ],
+      "high_resolution": {
+        "id": "03_017ee_BcQH9aGSpPYB9VyqTmgbdkVT",
+        "timestamp": 1695902280,
+        "orientation": 0
+      },
+      "is_suspicious": false,
+      "full_size_url": "https://images1.vinted.net/tc/03_017ee_BcQH9aGSpPYB9VyqTmgbdkVT/1695902280.jpeg?s=71283b7af324b375a7581d58f39d7c2cf2f84aff",
+      "is_hidden": false,
+      "extra": {}
+    },
+    "favourite_count": 1,
+    "is_favourite": false,
+    "badge": null,
+    "conversion": null,
+    "service_fee": "7.85",
+    "total_item_price": "106.85",
+    "view_count": 0,
+    "size_title": "S",
+    "content_source": "catalog",
+    "search_tracking_params": {
+      "score": 0,
+      "matched_queries": null
+    }
+  },
+  {
+    "id": 3536336041,
+    "title": "Bunda The North Face",
+    "price": "70.13",
+    "is_visible": 1,
+    "discount": null,
+    "currency": "PLN",
+    "brand_title": "The North Face",
+    "is_for_swap": false,
+    "user": {
+      "id": 89615072,
+      "login": "nikol.ett",
+      "business": false,
+      "profile_url": "https://www.vinted.pl/member/89615072-nikolett",
+      "photo": {
+        "id": 96763848,
+        "width": 800,
+        "height": 800,
+        "temp_uuid": null,
+        "url": "https://images1.vinted.net/t/02_01af5_iKyihF9AiPFtfwbPv49z7Qov/f800/1655900307.jpeg?s=9a40d4599ccd94aecacedc4dbca463aa5ae67d73",
+        "dominant_color": "#31abc2",
+        "dominant_color_opaque": "#C1E6ED",
+        "thumbnails": [
+          {
+            "type": "thumb310",
+            "url": "https://images1.vinted.net/t/02_01af5_iKyihF9AiPFtfwbPv49z7Qov/310x310/1655900307.jpeg?s=e144b56f4694d812fe8f2be59851772b5058bc76",
+            "width": 310,
+            "height": 310,
+            "original_size": null
+          },
+          {
+            "type": "thumb150",
+            "url": "https://images1.vinted.net/t/02_01af5_iKyihF9AiPFtfwbPv49z7Qov/150x150/1655900307.jpeg?s=d4d0277c61cd8f07d7001165ed0e27c471b7bcde",
+            "width": 150,
+            "height": 150,
+            "original_size": null
+          },
+          {
+            "type": "thumb100",
+            "url": "https://images1.vinted.net/t/02_01af5_iKyihF9AiPFtfwbPv49z7Qov/100x100/1655900307.jpeg?s=3bbcdf30d746b359b0e4f39572f2188a107aa7f2",
+            "width": 100,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb50",
+            "url": "https://images1.vinted.net/t/02_01af5_iKyihF9AiPFtfwbPv49z7Qov/50x50/1655900307.jpeg?s=d4d39f56541c942c51f9ad8792d0ceaa41004cb8",
+            "width": 50,
+            "height": 50,
+            "original_size": null
+          },
+          {
+            "type": "thumb20",
+            "url": "https://images1.vinted.net/t/02_01af5_iKyihF9AiPFtfwbPv49z7Qov/20x20/1655900307.jpeg?s=ba3fe0f7ab7af0898febd8dd997283afe0d656a5",
+            "width": 20,
+            "height": 20,
+            "original_size": null
+          }
+        ],
+        "is_suspicious": false,
+        "orientation": null,
+        "high_resolution": {
+          "id": "02_01af5_iKyihF9AiPFtfwbPv49z7Qov",
+          "timestamp": 1655900307,
+          "orientation": null
+        },
+        "full_size_url": "https://images1.vinted.net/tc/02_01af5_iKyihF9AiPFtfwbPv49z7Qov/1655900307.jpeg?s=a792e801007c8dd763e65cbd6fb53e900aea8a00",
+        "is_hidden": false,
+        "extra": {}
+      }
+    },
+    "url": "https://www.vinted.pl/items/3536336041-bunda-the-north-face",
+    "promoted": false,
+    "photo": {
+      "id": 14349462672,
+      "image_no": 1,
+      "width": 600,
+      "height": 800,
+      "dominant_color": "#9FBA4A",
+      "dominant_color_opaque": "#E2EAC9",
+      "url": "https://images1.vinted.net/t/02_023d5_mwga81Lp4fp9uKTwiVZL4UpR/f800/1695922125.jpeg?s=74b359e3d6302f61861ae0940c3190586703317f",
+      "is_main": true,
+      "thumbnails": [
+        {
+          "type": "thumb70x100",
+          "url": "https://images1.vinted.net/t/02_023d5_mwga81Lp4fp9uKTwiVZL4UpR/70x100/1695922125.jpeg?s=b1d8ecf1771f06080911be4ee8604a85a6bfe30c",
+          "width": 70,
+          "height": 100,
+          "original_size": null
+        },
+        {
+          "type": "thumb150x210",
+          "url": "https://images1.vinted.net/t/02_023d5_mwga81Lp4fp9uKTwiVZL4UpR/150x210/1695922125.jpeg?s=283bd181785d896f17267f3669a7ee440629ac7f",
+          "width": 150,
+          "height": 210,
+          "original_size": null
+        },
+        {
+          "type": "thumb310x430",
+          "url": "https://images1.vinted.net/t/02_023d5_mwga81Lp4fp9uKTwiVZL4UpR/310x430/1695922125.jpeg?s=b7520978eddc7c5f61a977b7ef6efa0e482e666d",
+          "width": 310,
+          "height": 430,
+          "original_size": null
+        },
+        {
+          "type": "thumb428x624",
+          "url": "https://images1.vinted.net/t/02_023d5_mwga81Lp4fp9uKTwiVZL4UpR/f800/1695922125.jpeg?s=74b359e3d6302f61861ae0940c3190586703317f",
+          "width": 321,
+          "height": 428,
+          "original_size": true
+        },
+        {
+          "type": "thumb624x428",
+          "url": "https://images1.vinted.net/t/02_023d5_mwga81Lp4fp9uKTwiVZL4UpR/f800/1695922125.jpeg?s=74b359e3d6302f61861ae0940c3190586703317f",
+          "width": 468,
+          "height": 624,
+          "original_size": true
+        },
+        {
+          "type": "thumb364x428",
+          "url": "https://images1.vinted.net/t/02_023d5_mwga81Lp4fp9uKTwiVZL4UpR/f800/1695922125.jpeg?s=74b359e3d6302f61861ae0940c3190586703317f",
+          "width": 273,
+          "height": 364,
+          "original_size": true
+        }
+      ],
+      "high_resolution": {
+        "id": "02_023d5_mwga81Lp4fp9uKTwiVZL4UpR",
+        "timestamp": 1695922125,
+        "orientation": null
+      },
+      "is_suspicious": false,
+      "full_size_url": "https://images1.vinted.net/tc/02_023d5_mwga81Lp4fp9uKTwiVZL4UpR/1695922125.jpeg?s=647164f56ab9e97d98f807b3ac33151244c249d2",
+      "is_hidden": false,
+      "extra": {}
+    },
+    "favourite_count": 0,
+    "is_favourite": false,
+    "badge": null,
+    "conversion": {
+      "seller_price": "15.0",
+      "seller_currency": "EUR",
+      "buyer_currency": "PLN",
+      "fx_rounded_rate": "4.68",
+      "fx_base_amount": "1.0",
+      "fx_markup_rate": "0.012"
+    },
+    "service_fee": "6.41",
+    "total_item_price": "76.54",
+    "view_count": 0,
+    "size_title": "L",
+    "content_source": "catalog",
+    "search_tracking_params": {
+      "score": 0,
+      "matched_queries": null
+    }
+  },
+  {
+    "id": 3536370614,
+    "title": "Polar The North Face z małym haftowanym logo Half zip TNF streetwear Nowa kolekcja!  ",
+    "price": "105.0",
+    "is_visible": 1,
+    "discount": null,
+    "currency": "PLN",
+    "brand_title": "The North Face",
+    "is_for_swap": false,
+    "user": {
+      "id": 90472365,
+      "login": "mmtf02",
+      "business": false,
+      "profile_url": "https://www.vinted.pl/member/90472365-mmtf02",
+      "photo": {
+        "id": 90047990,
+        "width": 800,
+        "height": 800,
+        "temp_uuid": null,
+        "url": "https://images1.vinted.net/t/02_023a7_3EQb27ncVqNrpyE8aKt4dvjX/f800/1652699087.jpeg?s=a0793a6450a5963ecf3f38fafda9690a6a2221c7",
+        "dominant_color": "#31abc2",
+        "dominant_color_opaque": "#C1E6ED",
+        "thumbnails": [
+          {
+            "type": "thumb310",
+            "url": "https://images1.vinted.net/t/02_023a7_3EQb27ncVqNrpyE8aKt4dvjX/310x310/1652699087.jpeg?s=cf9078fa6217ddbf7be41b5b567f2c934e8fc5ec",
+            "width": 310,
+            "height": 310,
+            "original_size": null
+          },
+          {
+            "type": "thumb150",
+            "url": "https://images1.vinted.net/t/02_023a7_3EQb27ncVqNrpyE8aKt4dvjX/150x150/1652699087.jpeg?s=8070061b92386cfe19d3d7f2c798d4209b439105",
+            "width": 150,
+            "height": 150,
+            "original_size": null
+          },
+          {
+            "type": "thumb100",
+            "url": "https://images1.vinted.net/t/02_023a7_3EQb27ncVqNrpyE8aKt4dvjX/100x100/1652699087.jpeg?s=802f7aac851cc5809b67f39cfe23e4f1f923e910",
+            "width": 100,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb50",
+            "url": "https://images1.vinted.net/t/02_023a7_3EQb27ncVqNrpyE8aKt4dvjX/50x50/1652699087.jpeg?s=2c51abaf221b5e079b1a7b38fd9f20129ee093e6",
+            "width": 50,
+            "height": 50,
+            "original_size": null
+          },
+          {
+            "type": "thumb20",
+            "url": "https://images1.vinted.net/t/02_023a7_3EQb27ncVqNrpyE8aKt4dvjX/20x20/1652699087.jpeg?s=25792cc26b90c70f0a2fd1df55c848c471e952f8",
+            "width": 20,
+            "height": 20,
+            "original_size": null
+          }
+        ],
+        "is_suspicious": false,
+        "orientation": null,
+        "high_resolution": {
+          "id": "02_023a7_3EQb27ncVqNrpyE8aKt4dvjX",
+          "timestamp": 1652699087,
+          "orientation": null
+        },
+        "full_size_url": "https://images1.vinted.net/tc/02_023a7_3EQb27ncVqNrpyE8aKt4dvjX/1652699087.jpeg?s=caa4c73f824c2cc629b45aaa8d7f9d94b5ea5d62",
+        "is_hidden": false,
+        "extra": {}
+      }
+    },
+    "url": "https://www.vinted.pl/items/3536370614-polar-the-north-face-z-malym-haftowanym-logo-half-zip-tnf-streetwear-nowa-kolekcja",
+    "promoted": false,
+    "photo": {
+      "id": 14349626133,
+      "image_no": 1,
+      "width": 600,
+      "height": 800,
+      "dominant_color": "#18181B",
+      "dominant_color_opaque": "#BABABB",
+      "url": "https://images1.vinted.net/t/02_00249_jQjA7JZ4e7MWFi6YkDj4ec9U/f800/1695922598.jpeg?s=a031e38b497b45f308fa5d394484e37f75e88a8a",
+      "is_main": true,
+      "thumbnails": [
+        {
+          "type": "thumb70x100",
+          "url": "https://images1.vinted.net/t/02_00249_jQjA7JZ4e7MWFi6YkDj4ec9U/70x100/1695922598.jpeg?s=c1fa092443f81b271579badc2a5b05a43437bbd0",
+          "width": 70,
+          "height": 100,
+          "original_size": null
+        },
+        {
+          "type": "thumb150x210",
+          "url": "https://images1.vinted.net/t/02_00249_jQjA7JZ4e7MWFi6YkDj4ec9U/150x210/1695922598.jpeg?s=86c12314b8da406094622cae2527cdcf83d6da28",
+          "width": 150,
+          "height": 210,
+          "original_size": null
+        },
+        {
+          "type": "thumb310x430",
+          "url": "https://images1.vinted.net/t/02_00249_jQjA7JZ4e7MWFi6YkDj4ec9U/310x430/1695922598.jpeg?s=1210a28a8e903eeb9fb3a53aa6e5599c3fd293f4",
+          "width": 310,
+          "height": 430,
+          "original_size": null
+        },
+        {
+          "type": "thumb428x624",
+          "url": "https://images1.vinted.net/t/02_00249_jQjA7JZ4e7MWFi6YkDj4ec9U/f800/1695922598.jpeg?s=a031e38b497b45f308fa5d394484e37f75e88a8a",
+          "width": 321,
+          "height": 428,
+          "original_size": true
+        },
+        {
+          "type": "thumb624x428",
+          "url": "https://images1.vinted.net/t/02_00249_jQjA7JZ4e7MWFi6YkDj4ec9U/f800/1695922598.jpeg?s=a031e38b497b45f308fa5d394484e37f75e88a8a",
+          "width": 468,
+          "height": 624,
+          "original_size": true
+        },
+        {
+          "type": "thumb364x428",
+          "url": "https://images1.vinted.net/t/02_00249_jQjA7JZ4e7MWFi6YkDj4ec9U/f800/1695922598.jpeg?s=a031e38b497b45f308fa5d394484e37f75e88a8a",
+          "width": 273,
+          "height": 364,
+          "original_size": true
+        }
+      ],
+      "high_resolution": {
+        "id": "02_00249_jQjA7JZ4e7MWFi6YkDj4ec9U",
+        "timestamp": 1695922598,
+        "orientation": null
+      },
+      "is_suspicious": false,
+      "full_size_url": "https://images1.vinted.net/tc/02_00249_jQjA7JZ4e7MWFi6YkDj4ec9U/1695922598.jpeg?s=0edf69bb578dc4f742efede8f54956bc105b48b9",
+      "is_hidden": false,
+      "extra": {}
+    },
+    "favourite_count": 0,
+    "is_favourite": false,
+    "badge": null,
+    "conversion": null,
+    "service_fee": "8.15",
+    "total_item_price": "113.15",
+    "view_count": 0,
+    "size_title": "S",
+    "content_source": "catalog",
+    "search_tracking_params": {
+      "score": 0,
+      "matched_queries": null
+    }
+  },
+  {
+    "id": 3535680870,
+    "title": "Sweeter The North Face",
+    "price": "70.0",
+    "is_visible": 1,
+    "discount": null,
+    "currency": "PLN",
+    "brand_title": "The North Face",
+    "is_for_swap": false,
+    "user": {
+      "id": 162962186,
+      "login": "vse_market",
+      "business": false,
+      "profile_url": "https://www.vinted.pl/member/162962186-vsemarket",
+      "photo": null
+    },
+    "url": "https://www.vinted.pl/items/3535680870-sweeter-the-north-face",
+    "promoted": false,
+    "photo": {
+      "id": 14346488636,
+      "image_no": 1,
+      "width": 360,
+      "height": 800,
+      "dominant_color": "#39394E",
+      "dominant_color_opaque": "#C4C4CA",
+      "url": "https://images1.vinted.net/t/03_0034f_r4fEukZFkyzM4HzPhEkmjrDW/f800/1695913787.jpeg?s=788691e81dd182b9c57840ebea2f092bdb0ff9c9",
+      "is_main": true,
+      "thumbnails": [
+        {
+          "type": "thumb70x100",
+          "url": "https://images1.vinted.net/t/03_0034f_r4fEukZFkyzM4HzPhEkmjrDW/70x100/1695913787.jpeg?s=c87fb6d8d454f73857fef4aa6fd2d8a19fcd363c",
+          "width": 70,
+          "height": 100,
+          "original_size": null
+        },
+        {
+          "type": "thumb150x210",
+          "url": "https://images1.vinted.net/t/03_0034f_r4fEukZFkyzM4HzPhEkmjrDW/150x210/1695913787.jpeg?s=39f816be73510f79cc1886c1ee7cf6fcae1d4e34",
+          "width": 150,
+          "height": 210,
+          "original_size": null
+        },
+        {
+          "type": "thumb310x430",
+          "url": "https://images1.vinted.net/t/03_0034f_r4fEukZFkyzM4HzPhEkmjrDW/310x430/1695913787.jpeg?s=26a1e5743b7b53106c07fac9019679d77e61a7fe",
+          "width": 310,
+          "height": 430,
+          "original_size": null
+        },
+        {
+          "type": "thumb428x624",
+          "url": "https://images1.vinted.net/t/03_0034f_r4fEukZFkyzM4HzPhEkmjrDW/f800/1695913787.jpeg?s=788691e81dd182b9c57840ebea2f092bdb0ff9c9",
+          "width": 192,
+          "height": 428,
+          "original_size": true
+        },
+        {
+          "type": "thumb624x428",
+          "url": "https://images1.vinted.net/t/03_0034f_r4fEukZFkyzM4HzPhEkmjrDW/f800/1695913787.jpeg?s=788691e81dd182b9c57840ebea2f092bdb0ff9c9",
+          "width": 280,
+          "height": 624,
+          "original_size": true
+        },
+        {
+          "type": "thumb364x428",
+          "url": "https://images1.vinted.net/t/03_0034f_r4fEukZFkyzM4HzPhEkmjrDW/f800/1695913787.jpeg?s=788691e81dd182b9c57840ebea2f092bdb0ff9c9",
+          "width": 163,
+          "height": 364,
+          "original_size": true
+        }
+      ],
+      "high_resolution": {
+        "id": "03_0034f_r4fEukZFkyzM4HzPhEkmjrDW",
+        "timestamp": 1695913787,
+        "orientation": null
+      },
+      "is_suspicious": false,
+      "full_size_url": "https://images1.vinted.net/tc/03_0034f_r4fEukZFkyzM4HzPhEkmjrDW/1695913787.jpeg?s=3b239623af9731cb3a125e29d92793837d535cca",
+      "is_hidden": false,
+      "extra": {}
+    },
+    "favourite_count": 1,
+    "is_favourite": false,
+    "badge": null,
+    "conversion": null,
+    "service_fee": "6.4",
+    "total_item_price": "76.4",
+    "view_count": 0,
+    "size_title": "XXL",
+    "content_source": "catalog",
+    "search_tracking_params": {
+      "score": 0,
+      "matched_queries": null
+    }
+  },
+  {
+    "id": 3536218892,
+    "title": "Kurtka The North Face",
+    "price": "100.0",
+    "is_visible": 1,
+    "discount": null,
+    "currency": "PLN",
+    "brand_title": "The North Face",
+    "is_for_swap": false,
+    "user": {
+      "id": 92468161,
+      "login": "patkkaa01",
+      "business": false,
+      "profile_url": "https://www.vinted.pl/member/92468161-patkkaa01",
+      "photo": {
+        "id": 98220541,
+        "width": 800,
+        "height": 742,
+        "temp_uuid": null,
+        "url": "https://images1.vinted.net/t/02_02465_egKpzrt42hvvsUhG8YNSgfcg/f800/1657028508.jpeg?s=7d4d1bc5b21e9ffe9c4ce7103171bf35f4ac7bad",
+        "dominant_color": "#31abc2",
+        "dominant_color_opaque": "#C1E6ED",
+        "thumbnails": [
+          {
+            "type": "thumb310",
+            "url": "https://images1.vinted.net/t/02_02465_egKpzrt42hvvsUhG8YNSgfcg/310x310/1657028508.jpeg?s=acedb515d6786669b37320af8436be0ac9b1cf35",
+            "width": 310,
+            "height": 310,
+            "original_size": null
+          },
+          {
+            "type": "thumb150",
+            "url": "https://images1.vinted.net/t/02_02465_egKpzrt42hvvsUhG8YNSgfcg/150x150/1657028508.jpeg?s=3ef1ecccc9867cf24bdddd07ebd11a5c30aa9359",
+            "width": 150,
+            "height": 150,
+            "original_size": null
+          },
+          {
+            "type": "thumb100",
+            "url": "https://images1.vinted.net/t/02_02465_egKpzrt42hvvsUhG8YNSgfcg/100x100/1657028508.jpeg?s=33ebb804b17206e6d34d983bbb6feae67ca45282",
+            "width": 100,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb50",
+            "url": "https://images1.vinted.net/t/02_02465_egKpzrt42hvvsUhG8YNSgfcg/50x50/1657028508.jpeg?s=65f4f9de3f034ad155b75e5e65cd0441170ceeb7",
+            "width": 50,
+            "height": 50,
+            "original_size": null
+          },
+          {
+            "type": "thumb20",
+            "url": "https://images1.vinted.net/t/02_02465_egKpzrt42hvvsUhG8YNSgfcg/20x20/1657028508.jpeg?s=3c886fa225e4e3b5ecce762360cb1490d6491183",
+            "width": 20,
+            "height": 20,
+            "original_size": null
+          }
+        ],
+        "is_suspicious": false,
+        "orientation": null,
+        "high_resolution": {
+          "id": "02_02465_egKpzrt42hvvsUhG8YNSgfcg",
+          "timestamp": 1657028508,
+          "orientation": null
+        },
+        "full_size_url": "https://images1.vinted.net/tc/02_02465_egKpzrt42hvvsUhG8YNSgfcg/1657028508.jpeg?s=b1b0649872872932b9d55b9a309cbdbe7f2aada6",
+        "is_hidden": false,
+        "extra": {}
+      }
+    },
+    "url": "https://www.vinted.pl/items/3536218892-kurtka-the-north-face",
+    "promoted": false,
+    "photo": {
+      "id": 14348923600,
+      "image_no": 1,
+      "width": 600,
+      "height": 800,
+      "dominant_color": "#1E1E1E",
+      "dominant_color_opaque": "#BCBCBC",
+      "url": "https://images1.vinted.net/t/03_01cce_RjB5t4r9PwAzeQfWRaHSshbg/f800/1695920557.jpeg?s=1387cbb9c43a7aa560a696b58f4263900ac27c34",
+      "is_main": true,
+      "thumbnails": [
+        {
+          "type": "thumb70x100",
+          "url": "https://images1.vinted.net/t/03_01cce_RjB5t4r9PwAzeQfWRaHSshbg/70x100/1695920557.jpeg?s=94e6addcebc23ee373c26ca19437a6bcce6190dc",
+          "width": 70,
+          "height": 100,
+          "original_size": null
+        },
+        {
+          "type": "thumb150x210",
+          "url": "https://images1.vinted.net/t/03_01cce_RjB5t4r9PwAzeQfWRaHSshbg/150x210/1695920557.jpeg?s=98a1f13c1c33756db7aee94a5a9d47f2d8e3c61a",
+          "width": 150,
+          "height": 210,
+          "original_size": null
+        },
+        {
+          "type": "thumb310x430",
+          "url": "https://images1.vinted.net/t/03_01cce_RjB5t4r9PwAzeQfWRaHSshbg/310x430/1695920557.jpeg?s=d94fc81cafbab0135d139fef4e1b918f87c693ba",
+          "width": 310,
+          "height": 430,
+          "original_size": null
+        },
+        {
+          "type": "thumb428x624",
+          "url": "https://images1.vinted.net/t/03_01cce_RjB5t4r9PwAzeQfWRaHSshbg/f800/1695920557.jpeg?s=1387cbb9c43a7aa560a696b58f4263900ac27c34",
+          "width": 321,
+          "height": 428,
+          "original_size": true
+        },
+        {
+          "type": "thumb624x428",
+          "url": "https://images1.vinted.net/t/03_01cce_RjB5t4r9PwAzeQfWRaHSshbg/f800/1695920557.jpeg?s=1387cbb9c43a7aa560a696b58f4263900ac27c34",
+          "width": 468,
+          "height": 624,
+          "original_size": true
+        },
+        {
+          "type": "thumb364x428",
+          "url": "https://images1.vinted.net/t/03_01cce_RjB5t4r9PwAzeQfWRaHSshbg/f800/1695920557.jpeg?s=1387cbb9c43a7aa560a696b58f4263900ac27c34",
+          "width": 273,
+          "height": 364,
+          "original_size": true
+        }
+      ],
+      "high_resolution": {
+        "id": "03_01cce_RjB5t4r9PwAzeQfWRaHSshbg",
+        "timestamp": 1695920557,
+        "orientation": null
+      },
+      "is_suspicious": false,
+      "full_size_url": "https://images1.vinted.net/tc/03_01cce_RjB5t4r9PwAzeQfWRaHSshbg/1695920557.jpeg?s=ad88bc6f5dbf547ddf6235a751602069ea1ae2f5",
+      "is_hidden": false,
+      "extra": {}
+    },
+    "favourite_count": 1,
+    "is_favourite": false,
+    "badge": null,
+    "conversion": null,
+    "service_fee": "7.9",
+    "total_item_price": "107.9",
+    "view_count": 0,
+    "size_title": "L",
+    "content_source": "catalog",
+    "search_tracking_params": {
+      "score": 0,
+      "matched_queries": null
+    }
+  }
+]
