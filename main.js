@@ -7,13 +7,13 @@ const Config = require('./modules/config.js');
 const vintedUrl = Config.vintedLink;
 
 const itemsPerPage = '1'; // ile itemkow ma sie pojawic w API (mniej = szybciej działający kod)
-const catalogIds = '1206'; // id katalogu, łatwo znalezc wystarczy sprawdzic url na stronie
+const catalogIds = '1242'; // id katalogu, łatwo znalezc wystarczy sprawdzic url na stronie
 const colorIds = ''; // to samo co wyzej
-const brandIds = '2319'; // jeszcze nie wiem ale sie dowiem ^^
+const brandIds = ''; // jeszcze nie wiem ale sie dowiem ^^
 const sizeIds = ''; // to samo co wyzej
 const materialIds = ''; // to samo co wyzej
 const videoGameRatingIds = '';
-const price = '120' //   to samo co wyzej
+const price = '100' //   to samo co wyzej
 const currency = 'PLN'; // waluta w jakiej ma byc cena (EUR, PLN, USD)
 const order = 'newest_first'; // sposob w jaki przedmioty sa ukladane w api (newest_first = od najnowszych) (oldest_first = od najstarszych)
 
@@ -60,10 +60,16 @@ async function scrape(){
 }
 
 
-function startScraping(){
-    scrape().then(res => {
-        discordSendMsg(res)
-    })
+function startScraping() {
+    scrape()
+        .then((res) => {
+            discordSendMsg(res);
+        })
+        .catch((error) => {
+            console.error('Error:', error)
+            console.log('Restarting bot...')
+            setTimeout(() => startScraping(), Config.refreshTime);
+        })
 }
 
 function discordSendMsg(newOffers){
@@ -130,14 +136,3 @@ function getNewOffers(cachedOffers, fetchedOffers) {
     return newOffers;
 }
 
-function startScraping() {
-    scrape()
-        .then((res) => {
-            discordSendMsg(res);
-        })
-        .catch((error) => {
-            console.error('Error:', error)
-            console.log('Restarting bot...')
-            startScraping() // Restart the bot with the same parameters
-        })
-}
