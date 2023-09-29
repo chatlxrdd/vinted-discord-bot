@@ -7,7 +7,7 @@ const Config = require('./modules/config.js');
 const vintedUrl = Config.vintedLink;
 
 const itemsPerPage = '1'; // ile itemkow ma sie pojawic w API (mniej = szybciej działający kod)
-const catalogIds = '1242'; // id katalogu, łatwo znalezc wystarczy sprawdzic url na stronie
+const catalogIds = ''; // id katalogu, łatwo znalezc wystarczy sprawdzic url na stronie
 const colorIds = ''; // to samo co wyzej
 const brandIds = ''; // jeszcze nie wiem ale sie dowiem ^^
 const sizeIds = ''; // to samo co wyzej
@@ -39,7 +39,27 @@ async function getData(url = dataUrl){
         }
     })
     const res = await req.json();
-    return res?.items
+    if (res && res.items) {
+        const fetchedOffers = res.items;
+
+        // Add a timestamp to each item in fetchedOffers
+        const currentTime = Date.now();
+        const offersWithTimestamps = fetchedOffers.map(offer => ({
+            ...offer,
+            timestamp: currentTime,
+        }));
+
+        // Sort the offers by timestamp in descending order
+        offersWithTimestamps.sort((a, b) => b.timestamp - a.timestamp);
+
+        // Get the item with the highest timestamp
+        const highestTimestampItem = offersWithTimestamps[0];
+
+        // Return only the item with the highest timestamp
+        return [highestTimestampItem]
+    }
+
+    return null; // No items found
 }
 
 async function scrape(){
@@ -63,7 +83,7 @@ async function scrape(){
 function startScraping() {
     scrape()
         .then((res) => {
-            discordSendMsg(res);
+            //discordSendMsg(res);
         })
         .catch((error) => {
             console.error('Error:', error)
