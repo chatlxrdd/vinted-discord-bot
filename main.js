@@ -7,7 +7,7 @@ const Config = require('./modules/config.js');
 const vintedUrl = Config.vintedLink;
 
 const itemsPerPage = '1'; // ile itemkow ma sie pojawic w API (mniej = szybciej działający kod)
-const catalogIds = ''; // id katalogu, łatwo znalezc wystarczy sprawdzic url na stronie
+const catalogIds = '1242'; // id katalogu, łatwo znalezc wystarczy sprawdzic url na stronie
 const colorIds = ''; // to samo co wyzej
 const brandIds = ''; // jeszcze nie wiem ale sie dowiem ^^
 const sizeIds = ''; // to samo co wyzej
@@ -83,7 +83,7 @@ async function scrape(){
 function startScraping() {
     scrape()
         .then((res) => {
-            //discordSendMsg(res);
+            discordSendMsg(res);
         })
         .catch((error) => {
             console.error('Error:', error)
@@ -109,18 +109,29 @@ function discordSendMsg(newOffers){
             newOffers.map(offer => channel.send({
                 embeds: [
                     {
-                        "title": offer.title,
-                        "url": offer.url,
-                        "description": `
-                            cena: **${offer.total_item_price}** ${offer.currency}\n   
-                            marka: ${offer.brand}
-                        `,
-                        "color": 3387490,
-                        "thumbnail": {
-                            "url": offer?.photo?.url
-                        }
-                    }
-                ]
+                        title: offer.title,
+                        url: offer.url,
+                        color: 0x008000, // Green color
+                        thumbnail: {
+                            url: offer?.photo?.url,
+                        },
+                        fields: [
+                            {
+                                name: "Price",
+                                value: `**${offer.total_item_price}** ${offer.currency}`,
+                                inline: true, // Display inline with other fields
+                            },
+                            {
+                                name: "Brand",
+                                value: offer.brand_title || "Not specified",
+                                inline: true,
+                            },
+                        ],
+                        footer: {
+                            text: "Offer details",
+                        },
+                    },
+                ],
             }))
         } else {
             console.error(`Unable to find channel ${channelId}`);
