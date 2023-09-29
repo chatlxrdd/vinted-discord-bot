@@ -1,19 +1,19 @@
-// const puppeteer = require('puppeteer');
 const fs = require('fs');
 const Discord = require('discord.js');
 
 const Config = require('./modules/config.js');
+const prompt = require('prompt-sync')();
 
 const vintedUrl = Config.vintedLink;
 
 const itemsPerPage = '1'; // ile itemkow ma sie pojawic w API (mniej = szybciej działający kod)
-const catalogIds = '1242'; // id katalogu, łatwo znalezc wystarczy sprawdzic url na stronie
-const colorIds = ''; // to samo co wyzej
-const brandIds = ''; // jeszcze nie wiem ale sie dowiem ^^
-const sizeIds = ''; // to samo co wyzej
-const materialIds = ''; // to samo co wyzej
-const videoGameRatingIds = '';
-const price = '100' //   to samo co wyzej
+const catalogIds = prompt('Enter CatalogId: '); // id katalogu, łatwo znalezc wystarczy sprawdzic url na stronie
+const colorIds = prompt('Enter ColorId: '); // to samo co wyzej
+const brandIds = prompt('Enter BrandId: '); // jeszcze nie wiem ale sie dowiem ^^
+const sizeIds = prompt('Enter SizeId: '); // to samo co wyzej
+const materialIds = prompt('Enter materialId: '); // to samo co wyzej
+const videoGameRatingIds = prompt('Enter VieoGameRatingIds: ');
+const price = prompt('Enter price: ') //   to samo co wyzej
 const currency = 'PLN'; // waluta w jakiej ma byc cena (EUR, PLN, USD)
 const order = 'newest_first'; // sposob w jaki przedmioty sa ukladane w api (newest_first = od najnowszych) (oldest_first = od najstarszych)
 
@@ -88,8 +88,13 @@ function startScraping() {
         .catch((error) => {
             console.error('Error:', error)
             console.log('Restarting bot...')
-            setTimeout(() => startScraping(), Config.refreshTime);
+            restartBot()
         })
+}
+function restartBot() {
+    setTimeout(() => {
+        startScraping();
+    }, Config.refreshTime);
 }
 
 function discordSendMsg(newOffers){
