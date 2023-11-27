@@ -62,11 +62,16 @@ async function getData(url = dataUrl) {
 
     const res = await req.json();
 
-    const highestTimestampItem = res.reduce((highest, current) => {
-        return current.timestamp > highest.timestamp ? current : highest;
-    });
+    return res;
 
-    return highestTimestampItem;
+    // const highestTimestampItem = res.reduce((highest, current) => {
+    //     return current.timestamp > highest.timestamp ? current : highest;
+    // });
+
+    // return highestTimestampItem;
+    // const res = await req.json();
+
+    // return res;
 }
 
 async function scrape() {
@@ -77,7 +82,20 @@ async function scrape() {
 function startScraping() {
     scrape()
         .then((res) => {
-            console.log(res);
+            const newesPost = res.items[0];
+
+            fs.writeFile(
+                "cache.json",
+                JSON.stringify(newesPost, null, 4),
+                (err) => {
+                    if (err) {
+                        console.error(err.message);
+                        return;
+                    }
+                    console.log(newesPost);
+                    console.log("Post added successfully");
+                }
+            );
         })
         .catch((error) => {
             console.error(error);
