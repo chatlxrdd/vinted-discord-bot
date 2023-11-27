@@ -1,6 +1,7 @@
 const Config = require("./modules/config.js");
 const prompt = require("prompt-sync")();
 const fs = require("fs");
+const { discordSendMsg } = require("./modules/discordmsg.js");
 
 const vintedUrl = Config.vintedLink;
 
@@ -92,12 +93,26 @@ function startScraping() {
                         console.error(err.message);
                         return;
                     }
-                    console.log(newesPost);
-                    console.log("Post added successfully");
+
+                    discordInit();
+                    console.log("Post added successfully.");
                 }
             );
         })
         .catch((error) => {
             console.error(error);
         });
+}
+
+function discordInit() {
+    fs.readFile("./cache.json", "utf8", function (err, data) {
+        if (err) {
+            console.error(err.message);
+            return;
+        }
+
+        console.log("data", JSON.parse(data));
+
+        discordSendMsg(JSON.parse(data));
+    });
 }
