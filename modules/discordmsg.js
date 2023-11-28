@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
-const Config = require('./modules/config.js');
+const Config = require('./config.js');
 
-export function discordSendMsg(newOffers){
+function discordSendMsg(newOffers){
     if(newOffers.length == 0) return;
 
     const client = new Discord.Client({
@@ -49,3 +49,5 @@ export function discordSendMsg(newOffers){
 
     client.login(Config.discord.token);
 }
+
+module.exports = { discordSendMsg }
