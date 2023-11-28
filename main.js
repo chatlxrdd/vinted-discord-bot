@@ -1,45 +1,52 @@
 const Config = require("./modules/config.js");
 const prompt = require("prompt-sync")();
 const fetch = require("node-fetch");
+const catalogcfg = require("./modules/catalogscfg.jons");
 const fs = require("fs");
 const { discordSendMsg } = require("./modules/discordmsg.js");
 
 const vintedUrl = Config.vintedLink;
+const dataUrl = null;
 
 function parseUrl() {
-    const url = `https://www.vinted.pl/api/v2/catalog/items?`;
+    const url = "https://www.vinted.pl/api/v2/catalog/items?";
+    const storedParams = catalogcfg.params;
 
     const params = {
-        items_per_page: prompt("Items per page: "),
-        catalog_ids: prompt("Catalog IDs: "),
-        color_ids: prompt("Color IDs: "),
-        brand_ids: prompt("Brand IDs: "),
-        size_ids: prompt("Size IDs: "),
-        material_ids: prompt("Material IDs: "),
-        video_game_rating_ids: prompt("Video game rating IDs: "),
-        price: prompt("Price: "),
-        currency: prompt("Currency: "),
+        per_page:
+            prompt(`Items per page (${storedParams.per_page}): `) ||
+            storedParams.per_page,
+        catalog_ids:
+            prompt(`Catalog IDs (${storedParams.catalog_ids}): `) ||
+            storedParams.catalog_ids,
+        color_ids:
+            prompt(`Color IDs (${storedParams.color_ids}): `) ||
+            storedParams.color_ids,
+        brand_ids:
+            prompt(`Brand IDs (${storedParams.brand_ids}): `) ||
+            storedParams.brand_ids,
+        size_ids:
+            prompt(`Size IDs (${storedParams.size_ids}): `) ||
+            storedParams.size_ids,
+        material_ids:
+            prompt(`Material IDs (${storedParams.material_ids}): `) ||
+            storedParams.material_ids,
+        video_game_rating_ids:
+            prompt(
+                `Video game rating IDs (${storedParams.video_game_rating_ids}): `
+            ) || storedParams.video_game_rating_ids,
+        price: prompt(`Price (${storedParams.price}): `) || storedParams.price,
+        currency:
+            prompt(`Currency (${storedParams.currency}): `) ||
+            storedParams.currency,
         order: "newest_first",
     };
 
-    for (const param of Object.keys(params)) {
-        params[param];
-    }
+    config.params = params;
+    fs.writeFileSync("./catalogs/config.json", JSON.stringify(config, null, 4));
+
     const urlParams = new URLSearchParams(params).toString();
-
     return `${url}${urlParams}`;
-
-    // const itemsPerPage = prompt("Items per page: ");
-    // const catalogIds = prompt("Catalog IDs: ");
-    // const colorIds = prompt("Color IDs: ");
-    // const brandIds = prompt("Brand IDs: ");
-    // const sizeIds = prompt("Size IDs: ");
-    // const materialIds = prompt("Material IDs: ");
-    // const videoGameRatingIds = prompt("Video game rating IDs: ");
-    // const price = prompt("Price: ");
-    // const currency = prompt("Currency: ");
-    // const order = "newest_first";
-    // return `${url}items_per_page=${itemsPerPage}&catalog_ids=${catalogIds}&color_ids=${colorIds}&brand_ids=${brandIds}&size_ids=${sizeIds}&material_ids=${materialIds}&video_game_rating_ids=${videoGameRatingIds}&price=${price}&currency=${currency}&order=${order}`;
 }
 
 // next updates: Figure ou how to set up a discord bot and send the data to a channel
@@ -51,8 +58,7 @@ function getCookie(url = vintedUrl) {
         .then((cookies) => /_vinted_fr_session=([^;]+)/.exec(cookies)?.[1]);
 }
 
-
-async function getData(url = dataUrl) {
+async function getData(url = parseUrl) {
     const req = await fetch(url, {
         headers: {
             cookie: `_vinted_fr_session=${await getCookie()}`,
@@ -62,16 +68,7 @@ async function getData(url = dataUrl) {
     const res = await req.json();
 
     return res;
-
-    // const highestTimestampItem = res.reduce((highest, current) => {
-    //     return current.timestamp > highest.timestamp ? current : highest;
-    // });
-
-    // return highestTimestampItem;
-    // const res = await req.json();
-
-    // return res;
-
+}
 function getData(url) {
     return getCookie().then((cookie) =>
         fetch(url, {
@@ -80,7 +77,6 @@ function getData(url) {
             },
         }).then((req) => req.json())
     );
-
 }
 
 function scrape() {
@@ -113,7 +109,7 @@ function startScraping() {
 }
 
 function discordInit() {
-    fs.readFile("./cache.json", "utf8", function (err, data) {
+    fs.readFile("./cache/cache.json", "utf8", function (err, data) {
         if (err) {
             console.error(err.message);
             return;
@@ -121,10 +117,12 @@ function discordInit() {
 
         console.log("data", JSON.parse(data));
 
-        discordSendMsg(JSON.parse(data));
+        //discordSendMsg(JSON.parse(data));
     });
 }
-=======
-// Run the scraping function every 1 minute
-setInterval(startScraping, 3000);
 
+if (dataUrl == null) {
+    parseUrl();
+} else {
+    startScraping();
+}
