@@ -1,0 +1,13 @@
+{
+    "params": {
+        "per_page": 10,
+        "catalog_ids": "some_catalog_ids",
+        "color_ids": "some_color_ids",
+        "brand_ids": "some_brand_ids",
+        "size_ids": "some_size_ids",
+        "material_ids": "some_material_ids",
+        "video_game_rating_ids": "some_video_game_rating_ids",
+        "price": "some_price",
+        "currency": "some_currency"
+    }
+}
