@@ -1,5 +1,6 @@
 const Config = require("./modules/config.js");
 const prompt = require("prompt-sync")();
+const fetch = require("node-fetch");
 const fs = require("fs");
 
 const vintedUrl = Config.vintedLink;
@@ -19,37 +20,27 @@ function parseUrl() {
     return `${url}per_page=${itemsPerPage}&catalog_ids=${catalogIds}&color_ids=${colorIds}&brand_ids=${brandIds}&size_ids=${sizeIds}&material_ids=${materialIds}&video_game_rating_ids=${videoGameRatingIds}&price=${price}&currency=${currency}&order=${order}`;
 }
 
-const dataUrl = parseUrl();
+// next updates: Figure ou how to set up a discord bot and send the data to a channel
+// next updates: Make it run indefinitely every 1 minute
 
-console.log(dataUrl);
-console.log("Starting scraper...");
-startScraping();
-
-async function getCookie(url = vintedUrl) {
-    const req = await fetch(url);
-    const cookies = await req.headers.get("set-cookie");
-    const cookie = /_vinted_fr_session=([^;]+)/.exec(cookies)?.[1];
-    return cookie;
+function getCookie(url = vintedUrl) {
+    return fetch(url)
+        .then((req) => req.headers.get("set-cookie"))
+        .then((cookies) => /_vinted_fr_session=([^;]+)/.exec(cookies)?.[1]);
 }
 
-async function getData(url = dataUrl) {
-    const req = await fetch(url, {
-        headers: {
-            cookie: `_vinted_fr_session=${await getCookie()}`,
-        },
-    });
-
-    const res = await req.json();
-
-    const highestTimestampItem = res.reduce((highest, current) => {
-        return current.timestamp > highest.timestamp ? current : highest;
-    });
-
-    return highestTimestampItem;
+function getData(url) {
+    return getCookie().then((cookie) =>
+        fetch(url, {
+            headers: {
+                cookie: `_vinted_fr_session=${cookie}`,
+            },
+        }).then((req) => req.json())
+    );
 }
 
-async function scrape() {
-    const fetchedOffers = await getData();
+function scrape() {
+    const fetchedOffers = getData(parseUrl());
     return fetchedOffers;
 }
 
@@ -62,3 +53,6 @@ function startScraping() {
             console.error(error);
         });
 }
+
+// Run the scraping function every 1 minute
+setInterval(startScraping, 3000);
