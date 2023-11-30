@@ -20,6 +20,7 @@ function parseUrl() {
         price: parametersConfig.price,
         currency: parametersConfig.currency,
         order: parametersConfig.order,
+        search_text: parametersConfig.search_text,
     };
 
     const urlParams = new URLSearchParams(parameters).toString();
@@ -93,12 +94,20 @@ function discordInit() {
             console.error(err.message);
             return;
         }
-
+        const parsedData = JSON.parse(data);
         console.log("id", JSON.parse(data));
 
-        discordSendMsg();
+        if (parsedData.itemId !== lastItemId) {
+            console.log("ID się zmieniło. Wysyłam wiadomość.");
+            discordSendMsg();
+            lastItemId = parsedData.itemId;
+        } else {
+            console.log("ID nie zmieniło się. Nie wysyłam wiadomości.");
+        }
     });
 }
+
+let lastItemId = null;
 
 const frequency = 2 * 1000; // 2 seconds
 setInterval(function () {
