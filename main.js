@@ -27,9 +27,6 @@ function parseUrl() {
     return `${url}${urlParams}`;
 }
 
-// next updates: Figure ou how to set up a discord bot and send the data to a channel
-// next updates: Make it run indefinitely every 1 minute
-
 function getCookie(url = vintedUrl) {
     return fetch(url)
         .then((req) => req.headers.get("set-cookie"))
@@ -59,6 +56,9 @@ function getData(url) {
 
 function scrape() {
     const fetchedOffers = getData(parseUrl());
+    // const cachedOffers = discordInit();
+    // const offers = getNewOffers(fetchedOffers, cachedOffers);
+    // console.log(offers);
     return fetchedOffers;
 }
 
@@ -67,8 +67,12 @@ function startScraping() {
 
     scrape()
         .then((res) => {
-            const newesPost = res.items[0];
-
+            const newesPost = {
+                title: res.items[0].title,
+                price: res.items[0].price,
+                url: res.items[0].url,
+                photo: res.items[0].photo.url,
+            };
             fs.writeFile(
                 "cache.json",
                 JSON.stringify(newesPost, null, 4),
@@ -95,11 +99,9 @@ function discordInit() {
             return;
         }
 
-        console.log("data", JSON.parse(data));
+        console.log("id", JSON.parse(data));
 
-        // Ogarnac zeby dawało tylko dane z title, price, url i photo nie potrzeba wszytskich danych
-
-        //discordSendMsg(JSON.parse(data));
+        discordSendMsg(JSON.parse(data));
     });
 }
 
