@@ -1,51 +1,29 @@
 const Config = require("./modules/config.js");
-const prompt = require("prompt-sync")();
 const fetch = require("node-fetch");
-const catalogcfg = require("./modules/catalogscfg.jons");
+
 const fs = require("fs");
 const { discordSendMsg } = require("./modules/discordmsg.js");
 
 const vintedUrl = Config.vintedLink;
-const dataUrl = null;
 
 function parseUrl() {
+    const parametersConfig = Config.params;
     const url = "https://www.vinted.pl/api/v2/catalog/items?";
-    const storedParams = catalogcfg.params;
 
-    const params = {
-        per_page:
-            prompt(`Items per page (${storedParams.per_page}): `) ||
-            storedParams.per_page,
-        catalog_ids:
-            prompt(`Catalog IDs (${storedParams.catalog_ids}): `) ||
-            storedParams.catalog_ids,
-        color_ids:
-            prompt(`Color IDs (${storedParams.color_ids}): `) ||
-            storedParams.color_ids,
-        brand_ids:
-            prompt(`Brand IDs (${storedParams.brand_ids}): `) ||
-            storedParams.brand_ids,
-        size_ids:
-            prompt(`Size IDs (${storedParams.size_ids}): `) ||
-            storedParams.size_ids,
-        material_ids:
-            prompt(`Material IDs (${storedParams.material_ids}): `) ||
-            storedParams.material_ids,
-        video_game_rating_ids:
-            prompt(
-                `Video game rating IDs (${storedParams.video_game_rating_ids}): `
-            ) || storedParams.video_game_rating_ids,
-        price: prompt(`Price (${storedParams.price}): `) || storedParams.price,
-        currency:
-            prompt(`Currency (${storedParams.currency}): `) ||
-            storedParams.currency,
-        order: "newest_first",
+    const parameters = {
+        per_page: parametersConfig.per_page,
+        catalog_ids: parametersConfig.catalog_ids,
+        color_ids: parametersConfig.color_ids,
+        brand_ids: parametersConfig.brand_ids,
+        size_ids: parametersConfig.size_ids,
+        material_ids: parametersConfig.material_ids,
+        price: parametersConfig.price,
+        currency: parametersConfig.currency,
+        order: parametersConfig.order,
     };
 
-    config.params = params;
-    fs.writeFileSync("./catalogs/config.json", JSON.stringify(config, null, 4));
-
-    const urlParams = new URLSearchParams(params).toString();
+    const urlParams = new URLSearchParams(parameters).toString();
+    console.log(`${url}${urlParams}`);
     return `${url}${urlParams}`;
 }
 
@@ -85,6 +63,8 @@ function scrape() {
 }
 
 function startScraping() {
+    // Trzeba dodac cos w momencie ktorym oferta sie powtarza, zeby nie wysylac tego samego posta na discorda
+
     scrape()
         .then((res) => {
             const newesPost = res.items[0];
@@ -109,7 +89,7 @@ function startScraping() {
 }
 
 function discordInit() {
-    fs.readFile("./cache/cache.json", "utf8", function (err, data) {
+    fs.readFile("./cache.json", "utf8", function (err, data) {
         if (err) {
             console.error(err.message);
             return;
@@ -117,12 +97,14 @@ function discordInit() {
 
         console.log("data", JSON.parse(data));
 
+        // Ogarnac zeby dawało tylko dane z title, price, url i photo nie potrzeba wszytskich danych
+
         //discordSendMsg(JSON.parse(data));
     });
 }
 
-if (dataUrl == null) {
-    parseUrl();
-} else {
+const frequency = 2 * 1000; // 2 seconds
+setInterval(function () {
+    console.log(`Frequency set to: ${frequency}`); // debug message
     startScraping();
-}
+}, frequency);
