@@ -1,6 +1,6 @@
 module.exports = {
     discord: {
-        token: "MTE1NTI4MDA3NDE5MTQyMTQ5MA.Gfo8Z6.AM9v6SuaXkKmH5jZuoTT6MEC8Kq_k_6-QVWeuk",
+        token: "MTE1NTI4MDA3NDE5MTQyMTQ5MA.GpMn0t.iq3VA5i52WOufzD8aXfwo9q69g6i967TmfU2Rg",
         channelID: "1059837496709611563",
     },
     vintedLink: "https://www.vinted.pl/",

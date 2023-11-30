@@ -67,12 +67,7 @@ function startScraping() {
 
     scrape()
         .then((res) => {
-            const newesPost = {
-                title: res.items[0].title,
-                price: res.items[0].price,
-                url: res.items[0].url,
-                photo: res.items[0].photo.url,
-            };
+            const newesPost = res.items[0];
             fs.writeFile(
                 "cache.json",
                 JSON.stringify(newesPost, null, 4),
@@ -101,7 +96,7 @@ function discordInit() {
 
         console.log("id", JSON.parse(data));
 
-        discordSendMsg(JSON.parse(data));
+        discordSendMsg();
     });
 }
 
