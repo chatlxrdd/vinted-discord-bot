@@ -1,11 +1,13 @@
+// Import nessesary files and modules
 const Config = require("./modules/config.js");
 const fetch = require("node-fetch");
-
 const fs = require("fs");
 const { discordSendMsg } = require("./modules/discordmsg.js");
 
+// Define variables
 const vintedUrl = Config.vintedLink;
 
+// parseUrl helps to parse url with parameters from config.js
 function parseUrl() {
     const parametersConfig = Config.params;
     const url = "https://www.vinted.pl/api/v2/catalog/items?";
@@ -28,12 +30,14 @@ function parseUrl() {
     return `${url}${urlParams}`;
 }
 
+// getCookie helps to get cookie from vinted website
 function getCookie(url = vintedUrl) {
     return fetch(url)
         .then((req) => req.headers.get("set-cookie"))
         .then((cookies) => /_vinted_fr_session=([^;]+)/.exec(cookies)?.[1]);
 }
 
+// getData helps to get data from vinted website
 async function getData(url = parseUrl) {
     const req = await fetch(url, {
         headers: {
@@ -45,27 +49,15 @@ async function getData(url = parseUrl) {
 
     return res;
 }
-function getData(url) {
-    return getCookie().then((cookie) =>
-        fetch(url, {
-            headers: {
-                cookie: `_vinted_fr_session=${cookie}`,
-            },
-        }).then((req) => req.json())
-    );
-}
 
+// scrape helps to scrape data from vinted website
 function scrape() {
     const fetchedOffers = getData(parseUrl());
-    // const cachedOffers = discordInit();
-    // const offers = getNewOffers(fetchedOffers, cachedOffers);
-    // console.log(offers);
     return fetchedOffers;
 }
 
+// startScraping helps to start scraping data from vinted website
 function startScraping() {
-    // Trzeba dodac cos w momencie ktorym oferta sie powtarza, zeby nie wysylac tego samego posta na discorda
-
     scrape()
         .then((res) => {
             const newesPost = res.items[0];
@@ -88,6 +80,7 @@ function startScraping() {
         });
 }
 
+// discordInit helps to initialize discord bot when new offer occures
 function discordInit() {
     fs.readFile("./cache.json", "utf8", function (err, data) {
         if (err) {
@@ -95,14 +88,14 @@ function discordInit() {
             return;
         }
         const parsedData = JSON.parse(data);
-        console.log("id", JSON.parse(data));
+        console.log("id", JSON.parse(data)); // debug
 
         if (parsedData.itemId !== lastItemId) {
-            console.log("ID się zmieniło. Wysyłam wiadomość.");
+            console.log("ID się zmieniło. Wysyłam wiadomość."); // debug
             discordSendMsg();
             lastItemId = parsedData.itemId;
         } else {
-            console.log("ID nie zmieniło się. Nie wysyłam wiadomości.");
+            console.log("ID nie zmieniło się. Nie wysyłam wiadomości."); // debug
         }
     });
 }
@@ -111,6 +104,6 @@ let lastItemId = null;
 
 const frequency = 2 * 1000; // 2 seconds
 setInterval(function () {
-    console.log(`Frequency set to: ${frequency}`); // debug message
+    // console.log(`Frequency set to: ${frequency}`); // debug message
     startScraping();
 }, frequency);
