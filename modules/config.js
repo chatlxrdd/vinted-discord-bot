@@ -1,6 +1,6 @@
 module.exports = {
     discord: {
-        token: "MTE1NTI4MDA3NDE5MTQyMTQ5MA.GElWrd.PKjuC6XeUg4bHjzTBeUiZqagzU5uPaBifTil5g",
+        token: "MTE1NTI4MDA3NDE5MTQyMTQ5MA.GwAqhY.RuDWgebzgEoc8C6LlY1UAANHsdSCVsvaQkC0_c",
         channelID: "1059837496709611563",
     },
     vintedLink: "https://www.vinted.pl/",
@@ -15,6 +15,6 @@ module.exports = {
         currency: "",
         material_ids: "",
         order: "newest_first",
-        search_text: "Jordan",
+        search_text: "koszulka piłkarska",
     },
 };

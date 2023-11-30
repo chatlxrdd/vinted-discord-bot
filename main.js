@@ -90,10 +90,11 @@ function discordInit() {
         const parsedData = JSON.parse(data);
         console.log("id", JSON.parse(data)); // debug
 
-        if (parsedData.itemId !== lastItemId) {
+        if (parsedData.id !== lastItemId) {
             console.log("ID się zmieniło. Wysyłam wiadomość."); // debug
             discordSendMsg();
-            lastItemId = parsedData.itemId;
+            lastItemId = parsedData.id;
+            console.log("lastItemId", parsedData.id); // debug
         } else {
             console.log("ID nie zmieniło się. Nie wysyłam wiadomości."); // debug
         }
