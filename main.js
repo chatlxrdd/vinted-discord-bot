@@ -26,7 +26,7 @@ function parseUrl() {
     };
 
     const urlParams = new URLSearchParams(parameters).toString();
-    console.log(`${url}${urlParams}`);
+    console.log(`${url}${urlParams}`); // debug delete befor release
     return `${url}${urlParams}`;
 }
 
@@ -71,7 +71,6 @@ function startScraping() {
                     }
 
                     discordInit();
-                    console.log("Post added successfully.");
                 }
             );
         })
@@ -88,15 +87,15 @@ function discordInit() {
             return;
         }
         const parsedData = JSON.parse(data);
-        console.log("id", JSON.parse(data)); // debug
+        //console.log("id", JSON.parse(data)); // debug
 
         if (parsedData.id !== lastItemId) {
-            console.log("ID się zmieniło. Wysyłam wiadomość."); // debug
+            //console.log("ID się zmieniło. Wysyłam wiadomość."); // debug
             discordSendMsg();
             lastItemId = parsedData.id;
-            console.log("lastItemId", parsedData.id); // debug
+            //console.log("lastItemId", parsedData.id); // debug
         } else {
-            console.log("ID nie zmieniło się. Nie wysyłam wiadomości."); // debug
+            //console.log("ID nie zmieniło się. Nie wysyłam wiadomości."); // debug
         }
     });
 }

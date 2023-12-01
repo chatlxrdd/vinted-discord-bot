@@ -7,14 +7,15 @@ module.exports = {
     params: {
         per_page: 1,
         catalog_ids: "",
+        // aby dodac wiecej kolorow trzeba je oddzielic przecinkiem np. 1,2,3
         color_ids: "",
-        brand_ids: "",
+        brand_ids: "12,10187",
         size_ids: "",
         video_game_rating_ids: "",
         price: "",
         currency: "",
         material_ids: "",
         order: "newest_first",
-        search_text: "koszulka piłkarska",
+        search_text: "Nike",
     },
 };
