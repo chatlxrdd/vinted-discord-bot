@@ -37,14 +37,4 @@ The bot will fetch the latest item added to each category and send the informati
 
 Thanks to https://github.com/elkolorado for helping me on this repo
 
-If you find this bot helpful, consider giving it a star on the [GitHub repository](https://github.com/chatlxrdd/vinted-discord-bot).
-
-## Future Development
-
-Future developments for this bot may include:
-
-- Adding functionality to store data in a database.
-- Enhancing the ability to create and monitor categories.
-- Adding discord bot feature.
-
-Feel free to contribute to the project or suggest new features.
+WIELKIE POZDROWIENIE DLA RLT XD
