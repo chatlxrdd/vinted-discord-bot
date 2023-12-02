@@ -1,15 +1,17 @@
 // Import nessesary files and modules
 const Config = require("./modules/config.js");
+const configParams = require("./modules/configParms.js");
 const fetch = require("node-fetch");
 const fs = require("fs");
 const { discordSendMsg } = require("./modules/discordmsg.js");
+const { parse } = require("path");
 
 // Define variables
 const vintedUrl = Config.vintedLink;
 
 // parseUrl helps to parse url with parameters from config.js
 function parseUrl() {
-    const parametersConfig = Config.params;
+    const parametersConfig = configParams.params;
     const url = "https://www.vinted.pl/api/v2/catalog/items?";
 
     const parameters = {
@@ -94,8 +96,6 @@ function discordInit() {
             discordSendMsg();
             lastItemId = parsedData.id;
             //console.log("lastItemId", parsedData.id); // debug
-        } else {
-            //console.log("ID nie zmieniło się. Nie wysyłam wiadomości."); // debug
         }
     });
 }
@@ -103,6 +103,10 @@ function discordInit() {
 let lastItemId = null;
 
 const frequency = 2 * 1000; // 2 seconds
+setInterval(function () {
+    // console.log(`Frequency set to: ${frequency}`); // debug message
+    parseUrl();
+}, frequency);
 setInterval(function () {
     // console.log(`Frequency set to: ${frequency}`); // debug message
     startScraping();
