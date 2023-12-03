@@ -1,9 +1,9 @@
 // Import nessesary files and modules
 const Config = require("./modules/config.js");
-const configParams = require("./modules/configParms.js");
 const fetch = require("node-fetch");
 const fs = require("fs");
 const { discordSendMsg } = require("./modules/discordmsg.js");
+const { readConfigFile } = require("./modules/readConfigFile.js");
 const { parse } = require("path");
 
 // Define variables
@@ -11,24 +11,24 @@ const vintedUrl = Config.vintedLink;
 
 // parseUrl helps to parse url with parameters from config.js
 function parseUrl() {
-    const parametersConfig = configParams.params;
+    const parametersConfig = readConfigFile();
     const url = "https://www.vinted.pl/api/v2/catalog/items?";
 
     const parameters = {
-        per_page: parametersConfig.per_page,
-        catalog_ids: parametersConfig.catalog_ids,
-        color_ids: parametersConfig.color_ids,
-        brand_ids: parametersConfig.brand_ids,
-        size_ids: parametersConfig.size_ids,
-        material_ids: parametersConfig.material_ids,
-        price: parametersConfig.price,
-        currency: parametersConfig.currency,
-        order: parametersConfig.order,
-        search_text: parametersConfig.search_text,
+        per_page: parametersConfig.params.per_page,
+        catalog_ids: parametersConfig.params.catalog_ids,
+        color_ids: parametersConfig.params.color_ids,
+        brand_ids: parametersConfig.params.brand_ids,
+        size_ids: parametersConfig.params.size_ids,
+        material_ids: parametersConfig.params.material_ids,
+        price: parametersConfig.params.price,
+        currency: parametersConfig.params.currency,
+        order: parametersConfig.params.order,
+        search_text: parametersConfig.params.search_text,
     };
 
     const urlParams = new URLSearchParams(parameters).toString();
-    console.log(`${url}${urlParams}`); // debug delete befor release
+    //console.log(`${url}${urlParams}`); // debug delete befor release
     return `${url}${urlParams}`;
 }
 
@@ -92,7 +92,7 @@ function discordInit() {
         //console.log("id", JSON.parse(data)); // debug
 
         if (parsedData.id !== lastItemId) {
-            //console.log("ID się zmieniło. Wysyłam wiadomość."); // debug
+            console.log("ID się zmieniło. Wysyłam wiadomość."); // debug
             discordSendMsg();
             lastItemId = parsedData.id;
             //console.log("lastItemId", parsedData.id); // debug
@@ -102,12 +102,14 @@ function discordInit() {
 
 let lastItemId = null;
 
-const frequency = 2 * 1000; // 2 seconds
+const frequency = 5 * 1000; // 2 seconds
+
 setInterval(function () {
-    // console.log(`Frequency set to: ${frequency}`); // debug message
-    parseUrl();
-}, frequency);
-setInterval(function () {
-    // console.log(`Frequency set to: ${frequency}`); // debug message
-    startScraping();
+    const newConfigParams = readConfigFile();
+
+    if (newConfigParams) {
+        // Jeżeli plik konfiguracyjny został zmieniony, użyj nowych parametrów
+        parseUrl(newConfigParams.params);
+        startScraping();
+    }
 }, frequency);

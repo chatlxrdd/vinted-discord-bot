@@ -1,0 +1,15 @@
+{
+    "params": {
+        "per_page": 1,
+        "catalog_ids": "1206",
+        "color_ids": "",
+        "brand_ids": "",
+        "size_ids": "",
+        "video_game_rating_ids": "",
+        "price": "",
+        "currency": "",
+        "material_ids": "",
+        "order": "newest_first",
+        "search_text": ""
+    }
+}
