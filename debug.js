@@ -6,7 +6,9 @@ async function main() {
         const browser = await puppeteer.launch();
         const [page] = await browser.pages();
 
-        await page.goto("https://www.vinted.pl/");
+        await page.goto(
+            "https://nl.hideproxy.me/go.php?u=cGGJko8BPPC8hhzRQThea%2Fd8&b=5&f=norefer"
+        );
         const data = await page.evaluate(
             () => document.querySelector("*").outerHTML
         );
