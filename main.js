@@ -21,7 +21,7 @@ function parseUrl() {
         brand_ids: parametersConfig.params.brand_ids,
         size_ids: parametersConfig.params.size_ids,
         material_ids: parametersConfig.params.material_ids,
-        price: parametersConfig.params.price,
+        total_item_price: parametersConfig.params.total_item_price,
         currency: parametersConfig.params.currency,
         order: parametersConfig.params.order,
         search_text: parametersConfig.params.search_text,
