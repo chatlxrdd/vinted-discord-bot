@@ -5,6 +5,18 @@ const fs = require("fs");
 const { discordSendMsg } = require("./modules/discordmsg.js");
 const { readConfigFile } = require("./modules/readConfigFile.js");
 const { parse } = require("path");
+const puppeteer = require("puppeteer");
+
+async function startBrowser() {
+    const browser = await puppeteer.launch({
+        headless: false,
+        args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
+    const page = await browser.newPage();
+    await page.goto(Config.vintedLink);
+    return page;
+}
+startBrowser();
 
 // Define variables
 const vintedUrl = Config.vintedLink;

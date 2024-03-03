@@ -1,12 +1,12 @@
 {
     "params": {
         "per_page": 1,
-        "catalog_ids": "2050",
+        "catalog_ids": "",
         "color_ids": "",
-        "brand_ids": "14939,88,2319,687713,73306,73952",
+        "brand_ids": "",
         "size_ids": "",
         "video_game_rating_ids": "",
-        "price": "150",
+        "price": "",
         "currency": "PLN",
         "material_ids": "",
         "order": "newest_first",
