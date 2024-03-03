@@ -3,12 +3,12 @@ const puppeteer = require("puppeteer");
 // get html from vinted website in console
 async function main() {
     try {
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({
+            headles: false,
+        });
         const [page] = await browser.pages();
 
-        await page.goto(
-            "https://nl.hideproxy.me/go.php?u=cGGJko8BPPC8hhzRQThea%2Fd8&b=5&f=norefer"
-        );
+        await page.goto("https://www.vinted.pl/");
         const data = await page.evaluate(
             () => document.querySelector("*").outerHTML
         );
