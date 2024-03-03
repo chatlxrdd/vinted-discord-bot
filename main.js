@@ -62,6 +62,7 @@ async function getData(url = parseUrl) {
     const res = await req.json();
 
     return res;
+    console.log(res); // debug
 }
 
 // scrape helps to scrape data from vinted website
