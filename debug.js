@@ -1,23 +1,21 @@
-const puppeteer = require("puppeteer");
+const fetch = require('node-fetch');
 
-// get html from vinted website in console
-async function main() {
-    try {
-        const browser = await puppeteer.launch({
-            headles: false,
+async function getCookies(url = "https://www.vinted.pl/") {
+    const response = await fetch(url, { redirect: 'manual' });
+    // Get all 'set-cookie' headers
+    const rawCookies = response.headers.raw()['set-cookie'];
+    console.log("Set-Cookie headers:", rawCookies);
+
+    // Parse cookies into an object
+    const cookies = {};
+    if (rawCookies) {
+        rawCookies.forEach(cookieStr => {
+            const [cookiePair] = cookieStr.split(';');
+            const [key, value] = cookiePair.split('=');
+            cookies[key.trim()] = value.trim();
         });
-        const [page] = await browser.pages();
-
-        await page.goto("https://www.vinted.pl/");
-        const data = await page.evaluate(
-            () => document.querySelector("*").outerHTML
-        );
-
-        console.log(data);
-
-        await browser.close();
-    } catch (err) {
-        console.error(err);
     }
+    console.log("All cookies:", cookies);
 }
-main();
+
+getCookies();

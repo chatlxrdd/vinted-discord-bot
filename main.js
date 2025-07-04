@@ -5,21 +5,6 @@ const fs = require("fs");
 const { discordSendMsg } = require("./modules/discordmsg.js");
 const { readConfigFile } = require("./modules/readConfigFile.js");
 const { parse } = require("path");
-const puppeteer = require("puppeteer");
-
-async function startBrowser() {
-    const browser = await puppeteer.launch({
-        headless: false,
-        args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    });
-    const page = await browser.newPage();
-    await page.goto(Config.vintedLink);
-    return page;
-}
-startBrowser();
-
-// Define variables
-const vintedUrl = Config.vintedLink;
 
 // parseUrl helps to parse url with parameters from config.js
 function parseUrl() {
@@ -45,53 +30,130 @@ function parseUrl() {
 }
 
 // getCookie helps to get cookie from vinted website
-function getCookie(url = vintedUrl) {
-    return fetch(url)
-        .then((req) => req.headers.get("set-cookie"))
-        .then((cookies) => /_vinted_fr_session=([^;]+)/.exec(cookies)?.[1]);
+async function getCookie(url = "https://www.vinted.pl/") {
+    try {
+        const response = await fetch(url, { 
+            redirect: 'follow',
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'pl-PL,pl;q=0.9,en;q=0.8',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1',
+                'Sec-Fetch-Dest': 'document',
+                'Sec-Fetch-Mode': 'navigate',
+                'Sec-Fetch-Site': 'none'
+            }
+        });
+
+        // Get all 'set-cookie' headers
+        const setCookieHeaders = response.headers.raw()['set-cookie'];
+        console.log("Set-Cookie headers:", setCookieHeaders);
+
+        // Extract all necessary cookies
+        let cookies = {};
+        if (setCookieHeaders) {
+            for (const cookieHeader of setCookieHeaders) {
+                const cookieParts = cookieHeader.split(';')[0].split('=');
+                if (cookieParts.length === 2) {
+                    const [name, value] = cookieParts;
+                    cookies[name] = value;
+                }
+            }
+        }
+
+        // Build cookie string with all necessary cookies
+        let cookieString = Object.entries(cookies)
+            .map(([name, value]) => `${name}=${value}`)
+            .join('; ');
+
+        console.log("All cookies:", cookies);
+        console.log("Cookie string:", cookieString);
+        return cookieString;
+    } catch (error) {
+        console.error("Error getting cookie:", error);
+        return null;
+    }
 }
 
 // getData helps to get data from vinted website
-async function getData(url = parseUrl) {
+async function getData(url = parseUrl()) {
+    const cookieString = await getCookie();
+    
+    if (!cookieString) {
+        throw new Error("Failed to get cookies");
+    }
+
     const req = await fetch(url, {
         headers: {
-            cookie: `_vinted_fr_session=${await getCookie()}`,
+            'Cookie': cookieString,
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'application/json, text/plain, */*',
+            'Accept-Language': 'pl-PL,pl;q=0.9,en;q=0.8',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive',
+            'Referer': 'https://www.vinted.pl/',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-origin',
+            'X-Requested-With': 'XMLHttpRequest'
         },
     });
 
-    const res = await req.json();
+    let res;
+    try {
+        res = await req.json();
+    } catch (err) {
+        const text = await req.text();
+        console.error("Failed to parse JSON. Response was:", text);
+        console.error("Status:", req.status);
+        console.error("Headers:", req.headers.raw());
+        throw err;
+    }
 
+    console.log("API Response status:", req.status);
+    console.log("API Response data:", res);
     return res;
-    console.log(res); // debug
 }
 
 // scrape helps to scrape data from vinted website
-function scrape() {
-    const fetchedOffers = getData(parseUrl());
-    return fetchedOffers;
+async function scrape() {
+    try {
+        const fetchedOffers = await getData(parseUrl());
+        return fetchedOffers;
+    } catch (error) {
+        console.error("Error during scraping:", error);
+        throw error;
+    }
 }
 
 // startScraping helps to start scraping data from vinted website
-function startScraping() {
-    scrape()
-        .then((res) => {
-            const newesPost = res.items[0];
-            fs.writeFile(
-                "cache.json",
-                JSON.stringify(newesPost, null, 4),
-                (err) => {
-                    if (err) {
-                        console.error(err.message);
-                        return;
-                    }
-
-                    discordInit();
+async function startScraping() {
+    try {
+        const res = await scrape();
+        
+        if (!res || !res.items || res.items.length === 0) {
+            console.log("No items found in response");
+            return;
+        }
+        
+        const newesPost = res.items[0];
+        fs.writeFile(
+            "cache.json",
+            JSON.stringify(newesPost, null, 4),
+            (err) => {
+                if (err) {
+                    console.error(err.message);
+                    return;
                 }
-            );
-        })
-        .catch((error) => {
-            console.error(error);
-        });
+
+                discordInit();
+            }
+        );
+    } catch (error) {
+        console.error("Error in startScraping:", error);
+    }
 }
 
 // discordInit helps to initialize discord bot when new offer occures
